@@ -1,0 +1,858 @@
+/* --------------------------------Projektleitung fürStandortaufbau---------------------------- */
+.burger-menu-kompetenzen {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1.875rem;
+  height: 0.938rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.burger-menu-kompetenzen .line {
+  background-color: black;
+  height: 2px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.projektleitung-wrapper {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projektleitung-block-first,
+.projektleitung-block-second {
+  height: 100%;
+}
+
+.projektleitung-block-first {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.projektleitung-block-first > h1 {
+  font-weight: 400;
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  width: 80%;
+  color: #cfc3b2;
+  text-align: left;
+}
+.projektleitung-block-second {
+  width: 50%;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projektleitung-intro-text-block-one {
+  width: 70%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  color: black;
+}
+
+.projektleitung-intro-text-block-one > h4 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.projektleitung-intro-text-block-two {
+  width: 70%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.projektleitung-intro-text-block-two > h4 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* ----------------------------------------Projektleitung Inhalt---------------------- */
+
+.projektleitung-inhalt-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projekt-title-wrapper {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.projekt-title-wrapper > h1 {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 2.3rem;
+  color: #cfc3b2;
+}
+
+.inhalt-detail-wrapper-responsive {
+  display: none;
+}
+
+.inhalt-detail-wrapper {
+  width: 100%;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.inhalt-detail-first-block {
+  background-color: #f0f0f0;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.inhalt-detail-text-first-block {
+  width: 80%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.inhalt-detail-text-first-block > h4 {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.inhalt-detail-text-first-block > h5 {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.inhalt-detail-second-block {
+  background-color: black;
+  color: #f0f0f0;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.inhalt-detail-text-second-block {
+  width: 80%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.inhalt-detail-text-second-block:nth-child(3) > h5 {
+  margin-bottom: 1.3rem;
+}
+
+.inhalt-detail-text-second-block > h4 {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.inhalt-detail-text-second-block > h5 {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.projektleitung-ende-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projektleitung-ende-title-wrapper {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.projektleitung-ende-title-wrapper > h1 {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 2.3rem;
+  color: #cfc3b2;
+}
+
+.projektleitung-ende-detail-wrapper {
+  width: 100%;
+  min-height: 85vh;
+  display: flex;
+}
+
+.projektleitung-ende-detail-first-block {
+  background-color: black;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #cfc3b2;
+}
+
+.projektleitung-ende-detail-first-block > h1 {
+  font-weight: 500;
+  font-size: 6rem;
+}
+
+.projektleitung-ende-detail-first-block > p {
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.projektleitung-ende-detail-second-block {
+  background-color: #f0f0f0;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projektleitung-ende-detail-second-block-text-wrapper {
+  width: 60%;
+  height: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.projektleitung-ende-detail-second-block-text-wrapper > h5 {
+  font-weight: 500;
+  font-size: 1rem;
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -------------------------------Media Queries----------------------------------- */
+
+@media (max-width: 1450px) {
+  .projektleitung-ende-detail-second-block-text-wrapper {
+    height: 75%;
+    width: 70%;
+  }
+}
+
+@media (max-width: 1265px) {
+  .inhalt-detail-text-first-block > h4 {
+    font-size: 0.9rem;
+  }
+  .inhalt-detail-text-first-block > h5 {
+    font-size: 0.9rem;
+  }
+
+  .inhalt-detail-text-second-block > h4 {
+    font-size: 0.9rem;
+  }
+  .inhalt-detail-text-second-block > h5 {
+    font-size: 0.9rem;
+  }
+  .inhalt-detail-wrapper {
+    height: 110vh;
+  }
+  .projektleitung-block-first > h1 {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 1202px) {
+  .projektleitung-intro-text-block-one > h4 {
+    font-size: 0.9rem;
+  }
+  .projektleitung-intro-text-block-two > h4 {
+    font-size: 0.9rem;
+  }
+
+  /* ------------------Projektleitung Inhalt----------------------- */
+  .inhalt-detail-wrapper {
+    height: 115vh;
+  }
+
+  .projekt-title-wrapper > h1 {
+    font-size: 2rem;
+  }
+
+  .inhalt-detail-text-first-block > h4 {
+    font-size: 0.85rem;
+    padding-bottom: 1rem;
+  }
+  .inhalt-detail-text-first-block > h5 {
+    font-size: 0.85rem;
+  }
+
+  .inhalt-detail-text-second-block > h4 {
+    font-size: 0.85rem;
+    padding-bottom: 1rem;
+  }
+  .inhalt-detail-text-second-block > h5 {
+    font-size: 0.85rem;
+  }
+
+  /* ------------------Projektleitung Ende----------------------- */
+  .projektleitung-ende-title-wrapper > h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1050px) {
+  .projektleitung-block-first > h1 {
+    font-size: 2.6rem;
+  }
+  /* ------------------ProjektLeitung Inhalt----------------- */
+  .inhalt-detail-wrapper {
+    height: 125vh;
+  }
+
+  .inhalt-detail-text-first-block > h4 {
+    padding-bottom: 0.8rem;
+  }
+
+  .inhalt-detail-text-second-block > h4 {
+    padding-bottom: 0.8rem;
+  }
+  .projekt-title-wrapper > h1 {
+    font-size: 1.8rem;
+  }
+
+  /* ------------------Projektleitung Ende----------------------- */
+  .projektleitung-ende-title-wrapper > h1 {
+    font-size: 1.8rem;
+  }
+
+  .projektleitung-ende-detail-second-block-text-wrapper > h5 {
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+
+  .projektleitung-ende-detail-first-block > h1 {
+    font-weight: 500;
+    font-size: 5rem;
+  }
+
+  .projektleitung-ende-detail-first-block > p {
+    font-weight: 300;
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 970px) {
+  .projektleitung-block-first > h1 {
+    font-size: 2.2rem;
+  }
+
+  /* ------------------ProjektLeitung Inhalt----------------- */
+  .inhalt-detail-wrapper {
+    height: 130vh;
+  }
+}
+
+@media (max-width: 900px) {
+  .projektleitung-intro-text-block-one > h4 {
+    font-size: 0.85rem;
+  }
+  .projektleitung-intro-text-block-two > h4 {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 850px) {
+  /* ------------------Projektleitung Ende----------------------- */
+  .projektleitung-ende-title-wrapper > h1 {
+    font-size: 1.6rem;
+  }
+
+  .projektleitung-ende-detail-second-block-text-wrapper > h5 {
+    font-weight: 500;
+    font-size: 0.85rem;
+  }
+
+  .projektleitung-ende-detail-first-block > h1 {
+    font-size: 4rem;
+  }
+
+  .projektleitung-ende-detail-first-block > p {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 810px) {
+  .projektleitung-block-first > h1 {
+    font-size: 1.8rem;
+  }
+
+  .projektleitung-intro-text-block-one > h4 {
+    font-size: 0.8rem;
+  }
+  .projektleitung-intro-text-block-two > h4 {
+    font-size: 0.8rem;
+  }
+
+  /* ------------------ProjektLeitung Inhalt----------------- */
+
+  .inhalt-detail-first-block > div:nth-child(2) {
+    margin-top: -3rem;
+  }
+
+  .inhalt-detail-first-block > div:nth-child(3) {
+    margin-top: -3rem;
+  }
+
+  .inhalt-detail-second-block > div:nth-child(2) {
+    margin-top: -3rem;
+  }
+
+  .inhalt-detail-second-block > div:nth-child(3) {
+    margin-top: -3rem;
+  }
+
+  .inhalt-detail-text-first-block > h4 {
+    font-size: 0.8rem;
+  }
+  .inhalt-detail-text-first-block > h5 {
+    font-size: 0.8rem;
+  }
+
+  .inhalt-detail-text-second-block > h4 {
+    font-size: 0.8rem;
+  }
+  .inhalt-detail-text-second-block > h5 {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 770px) {
+  .projektleitung-intro-text-block-one > h4 {
+    font-weight: 600;
+  }
+  .projektleitung-intro-text-block-two > h4 {
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 755px) {
+  .projektleitung-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 110vh;
+  }
+
+  .projektleitung-block-first {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .projektleitung-block-first > h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 70%;
+    font-size: 1.5rem;
+  }
+
+  .projektleitung-block-second {
+    width: 100%;
+  }
+  .burger-menu-kompetenzen .line {
+    background-color: #fff;
+  }
+
+  /* ------------------ProjektLeitung Inhalt-----------------*/
+
+  .inhalt-detail-wrapper {
+    display: none;
+  }
+
+  .projekt-title-wrapper > h1 {
+    font-size: 1.6rem;
+  }
+
+  .inhalt-detail-wrapper-responsive {
+    display: block;
+    width: 100%;
+    min-height: 180vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inhalt-detail-first-block-responsive {
+    width: 100%;
+    height: 90vh;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .inhalt-detail-text-first-block-responsive {
+    width: 60%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .inhalt-detail-text-first-block-responsive > h4 {
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+  }
+
+  .inhalt-detail-text-first-block-responsive > h5 {
+    font-weight: 500;
+    font-size: 0.8rem;
+  }
+
+  .inhalt-detail-second-block-responsive {
+    background-color: black;
+    color: #f0f0f0;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .inhalt-detail-text-second-block-responsive {
+    width: 60%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .inhalt-detail-text-second-block-responsive > h4 {
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+  }
+
+  .inhalt-detail-text-second-block-responsive > h5 {
+    font-weight: 500;
+    font-size: 0.8rem;
+  }
+
+  /* ------------------Projektleitung Ende----------------------- */
+
+  .projektleitung-ende-detail-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 85vh;
+  }
+
+  .projektleitung-ende-detail-first-block {
+    width: 100%;
+  }
+
+  .projektleitung-ende-detail-second-block {
+    width: 100%;
+    height: 65vh;
+  }
+
+  .projektleitung-ende-title-wrapper > h1 {
+    font-size: 1.4rem;
+  }
+
+  .projektleitung-ende-detail-second-block-text-wrapper > h5 {
+    font-size: 0.85rem;
+  }
+
+  .projektleitung-ende-detail-first-block > h1 {
+    font-size: 3rem;
+  }
+
+  .projektleitung-ende-detail-first-block > p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .projektleitung-ende-title-wrapper > h1 {
+    font-size: 1.2rem;
+  }
+  .projektleitung-ende-detail-first-block > h1 {
+    font-size: 2.5rem;
+  }
+
+  .projektleitung-ende-detail-first-block > p {
+    font-size: 0.8rem;
+  }
+  .projektleitung-ende-detail-second-block {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .projektleitung-block-first > h1 {
+    font-size: 1.2rem;
+  }
+
+  /* ------------------ProjektLeitung Inhalt-----------------*/
+
+  .projekt-title-wrapper > h1 {
+    font-size: 1.4rem;
+  }
+
+  .inhalt-detail-wrapper-responsive {
+    height: 220vh;
+  }
+
+  .inhalt-detail-first-block-responsive {
+    height: 110vh;
+  }
+
+  .inhalt-detail-second-block-responsive {
+    height: 110vh;
+  }
+
+  /* ----------------------------Projektleitung Ende-------------------------- */
+  .projektleitung-ende-title-wrapper > h1 {
+    font-size: 1.1rem;
+  }
+  .projektleitung-ende-detail-first-block > h1 {
+    font-size: 2.5rem;
+  }
+
+  .projektleitung-ende-detail-first-block > p {
+    font-size: 0.8rem;
+  }
+  .projektleitung-ende-detail-second-block {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 530px) {
+  /* ----------------------------Projektleitung Ende-------------------------- */
+  .projektleitung-ende-title-wrapper > h1 {
+    font-size: 1rem;
+    text-align: center;
+    width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  .projektleitung-block-first > h1 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  /* ------------------ProjektLeitung Inhalt-----------------*/
+
+  .projekt-title-wrapper > h1 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 490px) {
+  .projektleitung-wrapper {
+    height: 130vh;
+  }
+
+  /* ------------------ProjektLeitung Inhalt-----------------*/
+
+  .projekt-title-wrapper > h1 {
+    font-size: 1.1rem;
+  }
+
+  .inhalt-detail-wrapper-responsive {
+    height: 260vh;
+  }
+
+  .inhalt-detail-first-block-responsive {
+    height: 130vh;
+  }
+
+  .inhalt-detail-second-block-responsive {
+    height: 130vh;
+  }
+
+  .inhalt-detail-text-first-block-responsive {
+    width: 80%;
+  }
+
+  .inhalt-detail-text-second-block-responsive {
+    width: 80%;
+  }
+
+  .inhalt-detail-text-first-block-responsive > h4 {
+    padding-bottom: 0.5rem;
+  }
+
+  .inhalt-detail-text-second-block-responsive > h4 {
+    padding-bottom: 0.5rem;
+  }
+  .inhalt-detail-text-second-block-responsive:nth-child(3) > h4 {
+    padding-bottom: 0.1rem;
+  }
+
+  .inhalt-detail-text-second-block-responsive:nth-child(3) > h5 {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .projektleitung-ende-detail-second-block-text-wrapper > h5 {
+    font-size: 0.8rem;
+  }
+  .projektleitung-ende-detail-second-block-text-wrapper > h5:nth-child(2) {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .projektleitung-wrapper {
+    height: 140vh;
+  }
+
+  /* ------------------ProjektLeitung Inhalt-----------------*/
+
+  .projekt-title-wrapper > h1 {
+    font-size: 1rem;
+  }
+
+  .inhalt-detail-wrapper-responsive {
+    height: 280vh;
+  }
+
+  .inhalt-detail-first-block-responsive {
+    height: 140vh;
+  }
+
+  .inhalt-detail-second-block-responsive {
+    height: 140vh;
+  }
+}
+
+@media (max-width: 360px) {
+  .projektleitung-wrapper {
+    height: 160vh;
+  }
+
+  /* ------------------ProjektLeitung Inhalt-----------------*/
+
+  .projekt-title-wrapper > h1 {
+    font-size: 0.9rem;
+  }
+
+  /* --------------------Projektleitung Ende------------- */
+  .projektleitung-ende-detail-second-block {
+    height: 80vh;
+  }
+}
+
+@media (max-width: 320px) {
+  .projektleitung-wrapper {
+    height: 170vh;
+  }
+
+  .projektleitung-block-first {
+    height: 40%;
+  }
+
+  .projektleitung-block-first > h1 {
+    text-align: left;
+  }
+  .projektleitung-intro-text-block-one {
+    margin-bottom: 2rem;
+  }
+
+  .projektleitung-intro-text-block-one > h4 {
+    font-size: 0.75rem;
+  }
+  .projektleitung-intro-text-block-two > h4 {
+    font-size: 0.75rem;
+  }
+
+  /* ------------------ProjektLeitung Inhalt-----------------*/
+
+  .projekt-title-wrapper > h1 {
+    font-size: 1rem;
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .inhalt-detail-wrapper-responsive {
+    height: 320vh;
+  }
+
+  .inhalt-detail-first-block-responsive {
+    height: 160vh;
+  }
+
+  .inhalt-detail-second-block-responsive {
+    height: 160vh;
+  }
+
+  /* --------------------Projektleitung Ende------------- */
+  .projektleitung-ende-detail-second-block {
+    height: 95vh;
+  }
+}
+
+@media (max-width: 265px) {
+  .inhalt-detail-wrapper-responsive {
+    height: 360vh;
+  }
+
+  .inhalt-detail-first-block-responsive {
+    height: 180vh;
+  }
+
+  .inhalt-detail-second-block-responsive {
+    height: 180vh;
+  }
+
+  /* --------------------Projektleitung Ende------------- */
+  .projektleitung-ende-detail-second-block {
+    height: 105vh;
+  }
+}

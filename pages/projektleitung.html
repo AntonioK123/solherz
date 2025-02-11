@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="de-AT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solherz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/projektleitung.css" />
+  </head>
+  <body>
+    <!-- Navigation Section  -->
+    <header>
+      <nav>
+        <!-- Logo -->
+        <div class="logo">
+          <a href="../home.html"><h1>SOLHERZ</h1></a>
+          <p>Qualität Verbindet</p>
+        </div>
+
+        <!-- Burger Menu  -->
+
+        <div class="burger-menu-kompetenzen" id="burgerMenu">
+          <div class="line line1"></div>
+          <div class="line line2"></div>
+          <div class="line line3"></div>
+        </div>
+      </nav>
+    </header>
+
+    <!------------------------------------------------ Overlay Menu  ------------------------------------->
+
+    <div class="overlay" id="overlay">
+      <div class="overlay-x" id="overlayX">
+        <div class="overlay-x-line overlay-x-line1"></div>
+        <div class="overlay-x-line overlay-x-line2"></div>
+      </div>
+
+      <div class="overlay-hero-wrapper">
+        <div class="overlay-hero-logo">
+          <h1 id="overlay_hero_logo">SOLHERZ</h1>
+          <p id="overlay_hero_slogan">Qualität Verbindet</p>
+        </div>
+        <div class="overlay-logo-line" id="overlay-logo-line"></div>
+
+        <div class="overlay-links">
+          <ul>
+            <li>
+              <a href="../home.html">Home</a>
+            </li>
+            <li>
+              <a href="./kompetenzen.html">Kompetenzen</a>
+            </li>
+            <li>
+              <a href="./projektleitung.html"
+                >Projektleitung für Standortaufbau</a
+              >
+            </li>
+            <li>
+              <a href="./about.html">Über uns</a>
+            </li>
+            <li>
+              <a href="./contact.html">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Ovo treba sredit -->
+      <div class="overlay-footer-wrapper">
+        <div class="overlay-footer-contact-wrapper">
+          <div class="overlay-footer-contact-first-block">
+            <h4 id="street">Favoritenstraße 24</h4>
+            <h4 id="city">1040 Wien</h4>
+            <h4 id="state">Österreich</h4>
+          </div>
+
+          <div class="overlay-footer-contact-second-block">
+            <h4 id="contact-email">Email: office@solherz.at</h4>
+            <h4 id="contact-telefon">Telefon: +43 650 2608369</h4>
+          </div>
+        </div>
+
+        <div class="overlay-footer-icons-wrapper">
+          <div class="first-icon">
+            <i class="icon ion-logo-linkedin" id="linkedIn-logo-overlay"></i>
+          </div>
+          <div class="second-icon">
+            <i class="icon ion-logo-facebook" id="facebook-logo-overlay"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--------------------------------------- Projektleitung Hero Part --------------------------------------->
+    <section class="projektleitung-wrapper">
+      <div class="projektleitung-block-first">
+        <h1>Projektleitung für Standortaufbau im Ausland</h1>
+      </div>
+      <div class="projektleitung-block-second">
+        <div class="projektleitung-intro-text-block-one">
+          <h4>
+            Sie planen den Aufbau eines Standorts in Kroatien oder Bosnien und
+            Herzegowina? Wir sind Ihr verlässlicher Partner für diese Region!
+            Mit unserem tiefen Verständnis der lokalen Gegebenheiten und unserem
+            umfangreichen Netzwerk unterstützen wir Sie dabei, Ihre
+            Expansionspläne erfolgreich umzusetzen. Unsere Dienstleistungen sind
+            speziell auf die Anforderungen von Engineering- und
+            Fertigungsunternehmen zugeschnitten.
+          </h4>
+        </div>
+        <div class="projektleitung-intro-text-block-two">
+          <h4>
+            Der Aufbau eines neuen Standorts im Ausland ist eine anspruchsvolle
+            Aufgabe, die präzise Planung, technisches Know-how und Erfahrung mit
+            den rechtlichen und kulturellen Besonderheiten vor Ort erfordert.
+            Wir übernehmen die komplette Projektleitung und sorgen dafür, dass
+            Ihr Vorhaben effizient, termingerecht und budgetkonform realisiert
+            wird.
+          </h4>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------------------- Projektleitung Inhalt --------------------------------->
+    <section class="projektleitung-inhalt-wrapper">
+      <div class="projekt-title-wrapper">
+        <h1>Unsere Dienstleistungen im Detail</h1>
+      </div>
+      <div class="inhalt-detail-wrapper">
+        <div class="inhalt-detail-first-block">
+          <div class="inhalt-detail-text-first-block">
+            <h4>1. Standortanalyse und strategische Planung</h4>
+            <h5>
+              Wir identifizieren gemeinsam mit Ihnen den optimalen Standort in
+              Kroatien oder Bosnien und Herzegowina, der Ihre Anforderungen an
+              Infrastruktur, Fachkräfte, Zulieferer und Marktzugang erfüllt.
+              Dabei berücksichtigen wir regionale Regularien, steuerliche
+              Vorteile und logistische Herausforderungen.
+            </h5>
+          </div>
+
+          <div class="inhalt-detail-text-first-block">
+            <h4>3. Technische und operative Beratung</h4>
+            <h5>
+              Engineering- und Fertigungsunternehmen benötigen maßgeschneiderte
+              Lösungen für ihre Produktionsanforderungen. Wir unterstützen Sie
+              bei der technischen Planung von Werkhallen, Produktionslinien und
+              Maschinen, sodass die Infrastruktur perfekt auf Ihre Prozesse
+              abgestimmt ist.
+            </h5>
+          </div>
+
+          <div class="inhalt-detail-text-first-block">
+            <h4>5. Unterstützung bei behördlichen Genehmigungen</h4>
+            <h5>
+              Wir navigieren Sie durch die komplexen bürokratischen
+              Anforderungen in Kroatien und Bosnien und Herzegowina. Ob
+              Umweltauflagen, Bauvorschriften oder Arbeitsschutzgesetze – wir
+              kümmern uns um die notwendigen Genehmigungen und stellen sicher,
+              dass alle Compliance-Vorgaben erfüllt werden.
+            </h5>
+          </div>
+        </div>
+
+        <div class="inhalt-detail-second-block">
+          <div class="inhalt-detail-text-second-block">
+            <h4>2. Projektmanagement von Anfang bis Ende</h4>
+            <h5>
+              Unsere erfahrenen Projektleiter koordinieren Ihr Vorhaben von der
+              ersten Planung bis zur Inbetriebnahme. Wir steuern alle
+              beteiligten Akteure, wie Architekten, Bauunternehmen und Behörden,
+              und gewährleisten einen reibungslosen Ablauf – termingerecht und
+              innerhalb des Budgets.
+            </h5>
+          </div>
+
+          <div class="inhalt-detail-text-second-block">
+            <h4>
+              4. Unterstützung bei der Rekrutierung und Fachkräfteentwicklung
+            </h4>
+            <h5>
+              Wir helfen Ihnen, geeignete lokale Partner für die Rekrutierung zu
+              finden und beraten bei der Auswahl von Fachkräften, die Ihren
+              Anforderungen entsprechen. Darüber hinaus unterstützen wir Sie bei
+              der Organisation von Schulungen, um Ihre Teams mit den
+              erforderlichen Technologien und Standards vertraut zu machen.
+            </h5>
+          </div>
+
+          <div class="inhalt-detail-text-second-block">
+            <h4>6. Netzwerke und Lieferkettenmanagement</h4>
+            <h5>
+              Mit unserem umfassenden Netzwerk in der Fertigungsindustrie
+              verbinden wir Sie mit zuverlässigen Lieferanten, Dienstleistern
+              und Partnern vor Ort. Wir sorgen dafür, dass Ihre Lieferkette
+              effizient eingerichtet wird und von Beginn an reibungslos
+              funktioniert.
+            </h5>
+          </div>
+        </div>
+      </div>
+
+                 <!----------------------------------------Responsive Version---------------------------------->
+      <div class="inhalt-detail-wrapper-responsive">
+        <div class="inhalt-detail-first-block-responsive">
+
+          <div class="inhalt-detail-text-first-block-responsive">
+            <h4>1. Standortanalyse und strategische Planung</h4>
+            <h5>
+              Wir identifizieren gemeinsam mit Ihnen den optimalen Standort in
+              Kroatien oder Bosnien und Herzegowina, der Ihre Anforderungen an
+              Infrastruktur, Fachkräfte, Zulieferer und Marktzugang erfüllt.
+              Dabei berücksichtigen wir regionale Regularien, steuerliche
+              Vorteile und logistische Herausforderungen.
+            </h5>
+          </div>
+
+          <div class="inhalt-detail-text-first-block-responsive">
+            <h4>2. Projektmanagement von Anfang bis Ende</h4>
+            <h5>
+              Unsere erfahrenen Projektleiter koordinieren Ihr Vorhaben von der
+              ersten Planung bis zur Inbetriebnahme. Wir steuern alle
+              beteiligten Akteure, wie Architekten, Bauunternehmen und Behörden,
+              und gewährleisten einen reibungslosen Ablauf – termingerecht und
+              innerhalb des Budgets.
+            </h5>
+          </div>
+
+
+          <div class="inhalt-detail-text-first-block-responsive">
+            <h4>3. Technische und operative Beratung</h4>
+            <h5>
+              Engineering- und Fertigungsunternehmen benötigen maßgeschneiderte
+              Lösungen für ihre Produktionsanforderungen. Wir unterstützen Sie
+              bei der technischen Planung von Werkhallen, Produktionslinien und
+              Maschinen, sodass die Infrastruktur perfekt auf Ihre Prozesse
+              abgestimmt ist.
+            </h5>
+          </div>
+
+        </div>
+        <div class="inhalt-detail-second-block-responsive">
+
+          <div class="inhalt-detail-text-second-block-responsive">
+            <h4>
+              4. Unterstützung bei der Rekrutierung und Fachkräfteentwicklung
+            </h4>
+            <h5>
+              Wir helfen Ihnen, geeignete lokale Partner für die Rekrutierung zu
+              finden und beraten bei der Auswahl von Fachkräften, die Ihren
+              Anforderungen entsprechen. Darüber hinaus unterstützen wir Sie bei
+              der Organisation von Schulungen, um Ihre Teams mit den
+              erforderlichen Technologien und Standards vertraut zu machen.
+            </h5>
+          </div>
+
+          <div class="inhalt-detail-text-second-block-responsive">
+            <h4>5. Unterstützung bei behördlichen Genehmigungen</h4>
+            <h5>
+              Wir navigieren Sie durch die komplexen bürokratischen
+              Anforderungen in Kroatien und Bosnien und Herzegowina. Ob
+              Umweltauflagen, Bauvorschriften oder Arbeitsschutzgesetze – wir
+              kümmern uns um die notwendigen Genehmigungen und stellen sicher,
+              dass alle Compliance-Vorgaben erfüllt werden.
+            </h5>
+          </div>
+
+
+          <div class="inhalt-detail-text-second-block-responsive">
+            <h4>6. Netzwerke und Lieferkettenmanagement</h4>
+            <h5>
+              Mit unserem umfassenden Netzwerk in der Fertigungsindustrie
+              verbinden wir Sie mit zuverlässigen Lieferanten, Dienstleistern
+              und Partnern vor Ort. Wir sorgen dafür, dass Ihre Lieferkette
+              effizient eingerichtet wird und von Beginn an reibungslos
+              funktioniert.
+            </h5>
+          </div>
+
+
+        </div>
+      </div>
+
+
+    </section>
+
+    <!---------------------------------- Projektleitung Ende --------------------------------->
+
+    <section class="projektleitung-ende-wrapper">
+      <div class="projektleitung-ende-title-wrapper">
+        <h1>Ihr Vorteil – ein starker Partner an Ihrer Seite</h1>
+      </div>
+      <div class="projektleitung-ende-detail-wrapper">
+        <div class="projektleitung-ende-detail-first-block">
+          <h1>SOLHERZ</h1>
+          <p>Qualität Verbindet</p>
+        </div>
+        <div class="projektleitung-ende-detail-second-block">
+          <div class="projektleitung-ende-detail-second-block-text-wrapper">
+            <h5>
+              Mit unserer Expertise und Erfahrung in Kroatien und Bosnien und
+              Herzegowina minimieren Sie Risiken, sparen wertvolle Zeit und können
+              sich auf Ihre Kernkompetenzen konzentrieren. Unser Ziel ist es, Ihre
+              internationale Expansion effizient und erfolgreich umzusetzen, damit
+              Sie in neuen Märkten schnell durchstarten können.
+            </h5>
+            
+              <h5>
+                Kontaktieren Sie uns noch heute, um Ihr Standortaufbauprojekt in
+                Kroatien oder Bosnien und Herzegowina zu realisieren – mit einem
+                erfahrenen Partner, der die spezifischen Anforderungen der
+                Engineering- und Fertigungsbranche versteht.
+              </h5>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="../main.js"></script>
+  </body>
+</html>

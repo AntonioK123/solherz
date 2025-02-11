@@ -1,0 +1,2358 @@
+/* -----------------Kompetenze Page--------------- */
+
+.kompetenzen-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.kompetenzen-block-first {
+  width: 20%;
+}
+.responsive-logo {
+  display: none;
+}
+
+.kompetenzen-block-first,
+.kompetenzen-block-second {
+  /* position: absolute; */
+  height: 100vh;
+}
+
+.kompetenzen-block-first {
+  /* left: 0; */
+  background-color: #0b0b0b; /* Dark background */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.kompetenzen-links-wrapper {
+  width: 70%;
+  height: 73%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  margin-bottom: 4rem;
+  /* margin-left: 4rem; */
+}
+.kompetenzen-links-wrapper > a {
+  text-decoration: none;
+  color: #f0f0f0;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  text-align: start;
+  transition: font-size 0.1s ease;
+}
+
+.kompetenzen-links-wrapper > a:hover {
+  border-bottom: 0.063rem solid #f0f0f0;
+  font-size: 1.2rem;
+}
+
+.kompetenzen-block-second {
+  width: 80%;
+  background-color: #f0f0f0; /* Light background */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.kompetenzen-intro-text {
+  position: relative;
+  width: 70%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem;
+  color: black;
+}
+
+.kompetenzen-intro-text > h1 {
+  font-weight: 700;
+  font-size: 4.5rem;
+  color: black;
+  text-transform: uppercase;
+  opacity: 0;
+}
+
+.kompetenzen-intro-text > p {
+  font-size: 1.2rem;
+  color: black;
+  text-align: center;
+  opacity: 0;
+}
+
+.arrow-wrapper {
+  width: 8rem;
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 8rem;
+}
+
+.arrow-wrapper > h3 {
+  font-size: 1.1rem;
+  opacity: 0;
+}
+
+.arrow-wrapper > i {
+  font-size: 2.3rem;
+  transform: scaleX(0.6);
+  margin-left: -0.5rem;
+}
+
+.burger-menu-kompetenzen {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1.875rem;
+  height: 0.938rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.burger-menu-kompetenzen .line {
+  background-color: black;
+  height: 0.125rem;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.kompetenzen-inhalt-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Drehen--------------- */
+.drehen-wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: #0b0b0b;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.drehen-img-wrapper {
+  width: 40%;
+  height: 70%;
+  background: url("../assets/images/Drehen\ 2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* opacity: 0; */
+}
+
+.drehen-img-wrapper > img {
+  width: 100%;
+  height: 100%;
+}
+
+.drehen-text-wrapper {
+  width: 40%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: -10rem;
+  transform: translateY(3.125rem); /* Slide up effect */
+}
+
+.drehen-text-wrapper > h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #f0f0f0;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drehen-text-wrapper > p {
+  color: #f0f0f0;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.drehen-text-wrapper > ul {
+  color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 30%;
+}
+
+@media (max-width: 1120px) {
+  .drehen-img-wrapper {
+    width: 35%;
+    height: 60%;
+  }
+
+  .drehen-text-wrapper {
+    height: 50%;
+  }
+}
+
+@media (max-width: 830px) {
+  .drehen-img-wrapper {
+    width: 40%;
+    height: 50%;
+  }
+
+  .drehen-text-wrapper {
+    margin-top: -8rem;
+    height: 60%;
+  }
+
+  .drehen-text-wrapper > p {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .drehen-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .drehen-img-wrapper {
+    width: 60%;
+    height: 40%;
+  }
+
+  .drehen-text-wrapper {
+    margin-top: -3rem;
+    height: 40%;
+    width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  .drehen-text-wrapper > h1 {
+    font-size: 1.5rem;
+  }
+
+  .drehen-text-wrapper > p {
+    font-size: 0.9rem;
+  }
+
+  .drehen-text-wrapper > ul {
+    font-size: 0.9rem;
+  }
+
+  .drehen-img-wrapper {
+    width: 80%;
+  }
+}
+
+@media (max-width: 360px) {
+  .drehen-text-wrapper > p {
+    margin-bottom: 2rem;
+  }
+  .drehen-text-wrapper > h1 {
+    margin-top: -2rem;
+  }
+}
+
+/* ------Fräsen------- */
+
+.fräsen-wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.fräsen-img-wrapper {
+  width: 40%;
+  height: 70%;
+  background: url("../assets/images/Fräsen.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.fräsen-img-wrapper > img {
+  width: 100%;
+  height: 100%;
+}
+
+.fräsen-text-wrapper {
+  width: 40%;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: -10rem;
+  transform: translateY(3.125rem);
+}
+
+.fräsen-text-wrapper > h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #0b0b0b;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fräsen-text-wrapper > p {
+  color: #0b0b0b;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fräsen-text-wrapper > h4 {
+  width: 100%;
+  color: #0b0b0b;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.fräsen-text-wrapper > ul {
+  color: #0b0b0b;
+  height: 40%;
+}
+
+.fräsen-text-wrapper .second-list {
+  height: 150%;
+  margin-left: 0.8rem;
+}
+
+.fräsen-text-wrapper .second-list .nested-list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 3rem;
+  margin-top: 0.5rem;
+}
+
+.fräsen-text-wrapper .second-list > li > h4 {
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 1300px) {
+  .fräsen-img-wrapper {
+    width: 35%;
+    height: 60%;
+  }
+
+  .fräsen-text-wrapper {
+    height: 70%;
+    margin-top: -4rem;
+  }
+
+  .fräsen-text-wrapper > h1 {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .fräsen-img-wrapper {
+    width: 40%;
+    height: 60%;
+  }
+
+  .fräsen-text-wrapper {
+    width: 50%;
+  }
+
+  .fräsen-text-wrapper > p {
+    margin-bottom: 1rem;
+  }
+  .fräsen-text-wrapper > ul:first-of-type {
+    height: 40%;
+    padding-left: 1rem;
+  }
+  .fräsen-text-wrapper > ul {
+    padding-left: 1rem;
+  }
+}
+
+@media (max-width: 965px) {
+  .fräsen-text-wrapper > ul:first-of-type {
+    margin-bottom: 1rem;
+  }
+
+  .fräsen-text-wrapper .second-list {
+    margin-top: 0.5rem;
+  }
+  .fräsen-text-wrapper {
+    height: 80%;
+  }
+}
+
+@media (max-width: 830px) {
+  .fräsen-text-wrapper > h1 {
+    font-size: 1.8rem;
+  }
+
+  .fräsen-text-wrapper {
+    margin-top: -6rem;
+  }
+
+  .fräsen-img-wrapper {
+    width: 40%;
+    height: 50%;
+  }
+
+  .fräsen-text-wrapper > p {
+    font-size: 0.95rem;
+  }
+
+  .fräsen-text-wrapper > h4 {
+    font-size: 0.9rem;
+  }
+
+  .fräsen-text-wrapper > ul {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .fräsen-wrapper {
+    width: 100%;
+    min-height: 130vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .fräsen-img-wrapper {
+    width: 60%;
+    height: 40%;
+    margin-top: 2rem;
+  }
+
+  .fräsen-text-wrapper {
+    height: 20%;
+    width: 80%;
+  }
+}
+
+@media (max-width: 577px) {
+  .fräsen-wrapper {
+    min-height: 140vh;
+  }
+}
+
+@media (max-width: 572px) {
+  .fräsen-wrapper {
+    min-height: 145vh;
+  }
+}
+
+@media (max-width: 509px) {
+  .fräsen-wrapper {
+    min-height: 160vh;
+  }
+
+  .fräsen-text-wrapper > h1 {
+    font-size: 1.5rem;
+  }
+
+  .fräsen-text-wrapper > h4 {
+    font-size: 0.8rem;
+  }
+
+  .fräsen-text-wrapper > p {
+    font-size: 0.9rem;
+  }
+
+  .fräsen-text-wrapper > ul {
+    font-size: 0.9rem;
+  }
+
+  .fräsen-img-wrapper {
+    margin-top: 2rem;
+    width: 80%;
+  }
+}
+
+@media (max-width: 360px) {
+  .fräsen-img-wrapper {
+    margin-top: 1rem;
+    height: 30%;
+  }
+  .fräsen-wrapper {
+    min-height: 150vh;
+  }
+}
+
+@media (max-width: 330px) {
+  .fräsen-img-wrapper {
+    margin-top: 8rem;
+  }
+}
+
+@media (max-width: 311px) {
+  .fräsen-img-wrapper {
+    margin-top: 10rem;
+    height: 30%;
+  }
+}
+
+@media (max-width: 301px) {
+  .fräsen-img-wrapper {
+    margin-top: 10rem;
+  }
+}
+
+@media (max-width: 271px) {
+  .fräsen-wrapper {
+    min-height: 170vh;
+  }
+  .fräsen-img-wrapper {
+    margin-top: 15rem;
+  }
+}
+
+/* ------------------Schleifen-------------- */
+
+.schleifen-wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: #0b0b0b;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.schleifen-img-wrapper {
+  width: 40%;
+  height: 70%;
+  background: url("../assets/images/Schleifen.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.schleifen-img-wrapper > img {
+  width: 100%;
+  height: 100%;
+}
+
+.schleifen-text-wrapper {
+  width: 40%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: -10rem;
+  transform: translateY(3.125rem); /* Slide up effect */
+}
+
+.schleifen-text-wrapper > h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #f0f0f0;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.schleifen-text-wrapper > p {
+  color: #f0f0f0;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1120px) {
+  .schleifen-img-wrapper {
+    width: 35%;
+    height: 60%;
+  }
+
+  .schleifen-text-wrapper {
+    height: 50%;
+  }
+}
+
+@media (max-width: 830px) {
+  .schleifen-img-wrapper {
+    width: 40%;
+    height: 50%;
+  }
+
+  .schleifen-text-wrapper {
+    margin-top: -8rem;
+    height: 60%;
+  }
+
+  .schleifen-text-wrapper {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .schleifen-text-wrapper {
+    margin-bottom: 3rem;
+    width: 45%;
+  }
+
+  .schleifen-text-wrapper > p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .schleifen-wrapper {
+    width: 100%;
+    min-height: 130vh;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .schleifen-img-wrapper {
+    width: 60%;
+    height: 40%;
+  }
+
+  .schleifen-text-wrapper {
+    margin-top: -3rem;
+    height: 40%;
+    width: 80%;
+  }
+}
+
+@media (max-width: 547px) {
+  .schleifen-text-wrapper {
+    margin-bottom: 4rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .schleifen-text-wrapper > h1 {
+    font-size: 1.5rem;
+  }
+
+  .schleifen-text-wrapper > p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 405px) {
+  .schleifen-text-wrapper {
+    width: 80%;
+  }
+  .schleifen-text-wrapper > p {
+    margin-bottom: 2rem;
+  }
+  .schleifen-text-wrapper > h1 {
+    margin-bottom: 4rem;
+  }
+  .schleifen-img-wrapper {
+    height: 40%;
+    width: 80%;
+  }
+}
+
+/* -----------------Schweißen-------------------- */
+
+.schweißen-wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.schweißen-img-wrapper {
+  width: 40%;
+  height: 70%;
+  background: url("../assets/images/Schweißen.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.schweißen-img-wrapper > img {
+  width: 100%;
+  height: 100%;
+}
+
+.schweißen-text-wrapper {
+  width: 40%;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: -12rem;
+  transform: translateY(3.125rem); /* Slide up effect */
+}
+
+.schweißen-text-wrapper > h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #0b0b0b;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.schweißen-text-wrapper > p {
+  color: #0b0b0b;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.schweißen-text-wrapper > ul {
+  color: #0b0b0b;
+  width: 80%;
+  margin-top: -2.2rem;
+}
+
+@media (max-width: 1300px) {
+  .schweißen-img-wrapper {
+    width: 40%;
+    height: 60%;
+    margin-top: -1.8rem;
+  }
+
+  .schweißen-text-wrapper {
+    height: 60%;
+    margin-top: -8rem;
+  }
+
+  .schweißen-text-wrapper > p {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 936px) {
+  .schweißen-text-wrapper > p {
+    margin-bottom: 3rem;
+  }
+
+  .schweißen-text-wrapper {
+    width: 45%;
+  }
+}
+
+@media (max-width: 830px) {
+  .schweißen-text-wrapper > h1 {
+    font-size: 1.8rem;
+  }
+
+  .schweißen-text-wrapper > p {
+    font-size: 0.95rem;
+  }
+
+  .schweißen-text-wrapper > ul > li > h4 {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .schweißen-text-wrapper {
+    width: 45%;
+  }
+}
+
+@media (max-width: 620px) {
+  .schweißen-wrapper {
+    width: 100%;
+    min-height: 130vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .schweißen-img-wrapper {
+    width: 80%;
+    height: 40%;
+    margin-top: 2rem;
+  }
+
+  .schweißen-text-wrapper {
+    height: 20%;
+    width: 80%;
+    margin-top: -2rem;
+  }
+}
+
+@media (max-width: 447px) {
+  .schweißen-text-wrapper > h1 {
+    font-size: 1.5rem;
+  }
+
+  .schweißen-text-wrapper > ul > li > h4 {
+    font-size: 0.85rem;
+  }
+
+  .schweißen-text-wrapper > p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 346px) {
+  .schweißen-text-wrapper {
+    height: 50%;
+  }
+
+  .schweißen-text-wrapper > ul {
+    margin-top: -1rem;
+  }
+}
+
+/* -------Umformen-------------- */
+
+.umformen-wrapper {
+  width: 100%;
+  height: 140vh;
+  background-color: #0b0b0b;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.umformen-img-wrapper {
+  width: 40%;
+  height: 70%;
+  background: url("../assets/images/Biegemaschinen.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.umformen-img-wrapper > img {
+  width: 100%;
+  height: 100%;
+}
+
+.umformen-text-wrapper {
+  width: 40%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -7rem;
+  transform: translateY(3.125rem); /* Slide up effect */
+}
+
+.umformen-first-block {
+  color: #f0f0f0;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.umformen-first-block > h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #f0f0f0;
+  /* height: 30%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.umformen-first-block .pressen-list-title {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+.umformen-first-block > p {
+  font-size: 0.95rem;
+}
+
+.umformen-first-block > h5 {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.umformen-first-block .pressen-list {
+  width: 50%;
+  margin-left: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.umformen-second-block {
+  color: #f0f0f0;
+  height: 30%;
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.umformen-second-block > p {
+  font-size: 0.95rem;
+}
+.umformen-second-block .biegen-list-title {
+  margin-top: 1rem;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.umformen-second-block > h5 {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.umformen-second-block .biegen-list {
+  width: 50%;
+  margin-left: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.umformen-third-block {
+  color: #f0f0f0;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.umformen-third-block > p {
+  font-size: 0.95rem;
+}
+.umformen-third-block .walzen-list-title {
+  margin-top: 1rem;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.umformen-third-block > h5 {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.umformen-third-block .walzen-list {
+  width: 50%;
+  margin-left: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.umformen-first-block > h5 {
+  margin-top: 0.5rem;
+}
+
+.umformen-second-block > h5 {
+  margin-top: 0.5rem;
+}
+
+.umformen-third-block > h5 {
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 1490px) {
+  .umformen-img-wrapper {
+    width: 35%;
+    height: 60%;
+  }
+
+  .umformen-text-wrapper {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .umformen-wrapper {
+    height: 130vh;
+  }
+}
+
+@media (max-width: 1052px) {
+  .umformen-text-wrapper {
+    margin-top: -8.2rem;
+  }
+}
+
+@media (max-width: 1001px) {
+  .umformen-wrapper {
+    height: 135vh;
+  }
+
+  .pressen-list > li {
+    width: 120%;
+  }
+}
+
+@media (max-width: 880px) {
+  .umformen-first-block > h1 {
+    font-size: 1.8rem;
+  }
+
+  .umformen-img-wrapper {
+    width: 40%;
+    height: 80%;
+  }
+
+  .umformen-first-block > p {
+    font-size: 0.9rem;
+  }
+  .pressen-list-title > li {
+    font-size: 0.9rem;
+  }
+
+  .umformen-first-block > h5 {
+    font-size: 0.8rem;
+  }
+
+  .pressen-list > li {
+    font-size: 0.9rem;
+  }
+  .umformen-second-block > p {
+    font-size: 0.9rem;
+  }
+
+  .biegen-list-title > li {
+    font-size: 0.9rem;
+  }
+
+  .umformen-second-block > h5 {
+    font-size: 0.8rem;
+  }
+
+  .biegen-list > li {
+    font-size: 0.9rem;
+    width: 120%;
+  }
+
+  .umformen-third-block > p {
+    font-size: 0.9rem;
+  }
+
+  .walzen-list-title > li {
+    font-size: 0.9rem;
+  }
+
+  .umformen-third-block > h5 {
+    font-size: 0.8rem;
+  }
+
+  .walzen-list > li {
+    font-size: 0.9rem;
+    width: 120%;
+  }
+}
+
+@media (max-width: 750px) {
+  .umformen-wrapper {
+    width: 100%;
+    height: 240vh;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .umformen-img-wrapper {
+    width: 70%;
+    height: 30%;
+    margin-top: 10rem;
+  }
+
+  .umformen-text-wrapper {
+    width: 70%;
+    height: 50%;
+    margin-top: -4rem;
+  }
+
+  .umformen-first-block {
+    margin-bottom: 2rem;
+  }
+
+  .umformen-second-block {
+    margin-bottom: 2rem;
+  }
+
+  .umformen-third-block {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 481px) {
+  .umformen-wrapper {
+    height: 260vh;
+  }
+
+  .umformen-text-wrapper {
+    height: 55%;
+    margin-top: -5rem;
+  }
+
+  .umformen-img-wrapper {
+    width: 80%;
+    height: 20%;
+    margin-top: 1rem;
+  }
+
+  .umformen-first-block > h5 {
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .umformen-first-block {
+    margin-bottom: 1rem;
+  }
+
+  .umformen-second-block > h5 {
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .umformen-second-block {
+    margin-bottom: 1rem;
+  }
+
+  .umformen-third-block > h5 {
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .umformen-third-block {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 401px) {
+  .pressen-list > li {
+    width: 150%;
+  }
+
+  .biegen-list > li {
+    width: 150%;
+  }
+  .walzen-list > li {
+    width: 150%;
+  }
+}
+
+@media (max-width: 377px) {
+  .umformen-wrapper {
+    height: 300vh;
+  }
+
+  .pressen-list-title > li > h4 {
+    padding: 1rem 1rem 1rem 0;
+  }
+
+  .biegen-list-title > li {
+    margin-top: 2rem;
+  }
+
+  .biegen-list-title > li > h4 {
+    padding: 1rem 1rem 1rem 0;
+  }
+
+  .walzen-list-title > li {
+    margin-top: 3rem;
+  }
+
+  .walzen-list-title > li > h4 {
+    padding: 1rem 1rem 1rem 0;
+  }
+
+  .umformen-img-wrapper {
+    margin-top: 10rem;
+  }
+}
+
+@media (max-width: 322px) {
+  .umformen-wrapper {
+    height: 360vh;
+  }
+
+  .umformen-first-block > h5 {
+    padding: 1rem;
+  }
+
+  .umformen-second-block > h5 {
+    padding: 1rem;
+  }
+
+  .umformen-third-block > h5 {
+    padding: 1rem;
+  }
+
+  .pressen-list > li {
+    width: 150%;
+    margin-left: -2rem;
+  }
+
+  .biegen-list > li {
+    width: 150%;
+    margin-left: -2rem;
+  }
+  .walzen-list > li {
+    width: 150%;
+    margin-left: -2rem;
+  }
+
+  .umformen-first-block {
+    margin-bottom: 1rem;
+  }
+
+  .umformen-second-block {
+    margin-bottom: 2rem;
+  }
+
+  .umformen-third-block {
+    margin-bottom: 1rem;
+  }
+
+  .umformen-img-wrapper {
+    height: 18%;
+    width: 80%;
+    margin-top: 10rem;
+  }
+}
+
+@media (max-width: 270px) {
+  .umformen-first-block {
+    margin-bottom: 2rem;
+  }
+
+  .umformen-second-block {
+    margin-bottom: 3rem;
+  }
+
+  .umformen-third-block {
+    margin-bottom: 0rem;
+  }
+
+  .umformen-img-wrapper {
+    height: 15%;
+    width: 80%;
+    margin-top: 20rem;
+  }
+}
+
+/* ---------------------------------------------------Schneiden--------------------------------------------- */
+
+.schneiden-wrapper {
+  width: 100%;
+  height: 140vh;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.schneiden-img-wrapper {
+  width: 40%;
+  height: 70%;
+  background: url("../assets/images/Laserschneiden.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* opacity: 0; */
+}
+
+.schneiden-img-wrapper > img {
+  width: 100%;
+  height: 100%;
+}
+
+.schneiden-text-wrapper {
+  width: 40%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -7rem;
+  transform: translateY(3.125rem); /* Slide up effect */
+}
+
+.schneiden-first-block {
+  color: #0b0b0b;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.schneiden-first-block > h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #0b0b0b;
+  /* height: 30%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.schneiden-first-block .laserschneiden-list-title {
+  width: 31%;
+  display: flex;
+  justify-content: center;
+}
+
+.schneiden-first-block .laser-list {
+  width: 100%;
+  height: 25%;
+  margin-left: 2rem;
+  padding: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  list-style-type: none;
+}
+
+.schneiden-second-block {
+  margin-top: 1rem;
+  color: #0b0b0b;
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.schneiden-second-block .plasmaschneiden-list-title {
+  margin-top: 1rem;
+  width: 34%;
+  display: flex;
+  justify-content: center;
+}
+
+.schneiden-second-block .plasma-list {
+  width: 100%;
+  height: 30%;
+  padding: 0.8rem;
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  list-style-type: none;
+}
+
+.schneiden-third-block {
+  color: #0b0b0b;
+  margin-top: 1rem;
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.schneiden-third-block .wasserstrahlschneiden-list-title {
+  margin-top: 1rem;
+  width: 41%;
+  display: flex;
+  justify-content: center;
+}
+
+.schneiden-third-block .wasserstrahl-list {
+  width: 100%;
+  height: 25%;
+  margin-left: 2rem;
+  padding: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  list-style-type: none;
+}
+
+@media (max-width: 1185px) {
+  .schneiden-wrapper {
+    height: 160vh;
+  }
+}
+
+@media (max-width: 1070px) {
+  .schneiden-first-block,
+  .schneiden-second-block,
+  .schneiden-third-block {
+    width: 100%;
+    margin-left: 0.5rem;
+  }
+}
+
+@media (max-width: 861px) {
+  .schneiden-first-block > h1 {
+    font-size: 1.8rem;
+    margin-left: -2rem;
+  }
+
+  .laserschneiden-list-title > li {
+    font-size: 0.9rem;
+  }
+
+  .schneiden-first-block > p {
+    font-size: 0.9rem;
+  }
+
+  .laser-list {
+    font-size: 0.9rem;
+  }
+
+  .schneiden-second-block > h1 {
+    font-size: 1.8rem;
+  }
+
+  .plasmaschneiden-list-title > li {
+    font-size: 0.9rem;
+  }
+
+  .schneiden-second-block > p {
+    font-size: 0.9rem;
+  }
+
+  .plasma-list {
+    font-size: 0.9rem;
+  }
+
+  .schneiden-third-block > h1 {
+    font-size: 1.8rem;
+  }
+
+  .wasserstrahlschneiden-list-title > li {
+    font-size: 0.9rem;
+  }
+
+  .schneiden-third-block > p {
+    font-size: 0.9rem;
+  }
+
+  .wasserstrahl-list {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .schneiden-text-wrapper {
+    width: 50%;
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .schneiden-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 220vh;
+  }
+
+  .schneiden-text-wrapper {
+    width: 80%;
+    height: 100vh;
+    margin-top: -1rem;
+  }
+
+  .schneiden-img-wrapper {
+    width: 70%;
+    height: 30%;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .schneiden-img-wrapper {
+    margin-top: 6rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .schneiden-wrapper {
+    height: 240vh;
+  }
+  .schneiden-img-wrapper {
+    margin-top: 10rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .schneiden-first-block {
+    margin-bottom: 3rem;
+  }
+
+  .laser-list > li {
+    margin-left: -2.5rem;
+  }
+
+  .schneiden-second-block {
+    margin-bottom: 3rem;
+  }
+
+  .plasma-list > li {
+    margin-left: -2.5rem;
+  }
+  .schneiden-third-block {
+    margin-bottom: 4rem;
+  }
+
+  .wasserstrahl-list > li {
+    margin-left: -2.5rem;
+  }
+
+  .laserschneiden-list-title > li {
+    padding: 1rem;
+    margin-left: 3rem;
+  }
+
+  .plasmaschneiden-list-title > li {
+    padding: 1rem;
+    margin-left: 3rem;
+  }
+
+  .wasserstrahlschneiden-list-title > li {
+    margin-left: 5.5rem;
+    padding: 1rem;
+  }
+
+  .schneiden-img-wrapper {
+    height: 20%;
+    margin-top: 20rem;
+  }
+}
+
+@media (max-width: 290px) {
+  .laser-list > li {
+    font-size: 0.85rem;
+    margin-left: -3rem;
+  }
+
+  .plasma-list > li {
+    font-size: 0.85rem;
+    margin-left: -3rem;
+  }
+
+  .wasserstrahl-list > li {
+    font-size: 0.85rem;
+    margin-left: -3rem;
+  }
+}
+
+@media (max-width: 270px) {
+  .schneiden-wrapper {
+    height: 280vh;
+  }
+
+  .laser-list > li {
+    font-size: 0.8rem;
+    margin-left: -3.5rem;
+  }
+
+  .plasma-list > li {
+    font-size: 0.8rem;
+    margin-left: -3.5rem;
+  }
+
+  .wasserstrahl-list > li {
+    font-size: 0.8rem;
+    margin-left: -3.5rem;
+  }
+}
+
+/* ---------------------------------------------Wärmebehandlungen------------------------------------ */
+
+.wärmebehandlung-wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: #0b0b0b;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.wärmebehandlung-img-wrapper {
+  width: 40%;
+  height: 70%;
+  background: url("../assets/images/Wärmebehandlung.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.wärmebehandlung-img-wrapper > img {
+  width: 100%;
+  height: 100%;
+}
+
+.wärmebehandlung-text-wrapper {
+  width: 40%;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: -10rem;
+  transform: translateY(3.125rem);
+}
+
+.wärmebehandlung-text-wrapper > h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #f0f0f0;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wärmebehandlung-text-wrapper > p {
+  color: #f0f0f0;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wärmebehandlung-text-wrapper > ul {
+  color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 30%;
+}
+
+@media (max-width: 1230px) {
+  .wärmebehandlung-text-wrapper {
+    height: 60%;
+    margin-top: -6rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .wärmebehandlung-text-wrapper > ul {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .wärmebehandlung-text-wrapper {
+    height: 65%;
+    width: 50%;
+  }
+
+  .wärmebehandlung-text-wrapper > h1 {
+    font-size: 1.5rem;
+  }
+
+  .wärmebehandlung-text-wrapper > p {
+    font-size: 0.9rem;
+  }
+
+  .wärmebehandlung-text-wrapper > ul {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .wärmebehandlung-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    height: 140vh;
+  }
+
+  .wärmebehandlung-text-wrapper {
+    width: 80%;
+    height: 50%;
+  }
+
+  .wärmebehandlung-img-wrapper {
+    width: 80%;
+    height: 30%;
+  }
+}
+
+@media (max-width: 300px) {
+  .wärmebehandlung-text-wrapper > h1 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .wärmebehandlung-text-wrapper > ul {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 270px) {
+  .wärmebehandlung-text-wrapper {
+    height: 60%;
+  }
+  .wärmebehandlung-text-wrapper > h1 {
+    font-size: 1.1rem;
+  }
+  .wärmebehandlung-text-wrapper > p {
+    font-size: 0.85rem;
+  }
+
+  .wärmebehandlung-text-wrapper > ul {
+    font-size: 0.85rem;
+  }
+}
+
+/* -----------------------------Sandstrahlen----------------- */
+
+.sandstrahlen-wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sandstrahlen-img-wrapper {
+  width: 40%;
+  height: 70%;
+  background: url("../assets/images/Sandstrahlen.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.sandstrahlen-img-wrapper > img {
+  width: 100%;
+  height: 100%;
+}
+
+.sandstrahlen-text-wrapper {
+  width: 40%;
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: -8rem;
+  transform: translateY(3.125rem);
+}
+
+.sandstrahlen-text-wrapper > h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #0b0b0b;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sandstrahlen-text-wrapper > p {
+  color: #0b0b0b;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sandstrahlen-text-wrapper > ul {
+  color: #0b0b0b;
+  width: 65%;
+  margin-top: 1rem;
+}
+
+@media (max-width: 1260px) {
+  .sandstrahlen-text-wrapper {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 1000px) {
+  .sandstrahlen-text-wrapper {
+    height: 75vh;
+  }
+}
+
+@media (max-width: 930px) {
+  .sandstrahlen-text-wrapper {
+    height: 80vh;
+  }
+}
+
+@media (max-width: 900px) {
+  .sandstrahlen-text-wrapper {
+    height: 90vh;
+  }
+}
+
+@media (max-width: 850px) {
+  .sandstrahlen-text-wrapper {
+    height: 80vh;
+    width: 50%;
+    justify-content: space-between;
+  }
+  .sandstrahlen-text-wrapper > h1 {
+    font-size: 1.8rem;
+  }
+
+  .sandstrahlen-text-wrapper > p {
+    font-size: 0.95rem;
+  }
+
+  .sandstrahlen-text-wrapper > ul {
+    font-size: 0.95rem;
+    /* margin-top: 3rem; */
+  }
+}
+
+@media (max-width: 620px) {
+  .sandstrahlen-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 140vh;
+  }
+
+  .sandstrahlen-text-wrapper {
+    width: 80%;
+    height: 40%;
+    margin-top: -4rem;
+  }
+
+  .sandstrahlen-img-wrapper {
+    width: 80%;
+    height: 40%;
+  }
+}
+
+@media (max-width: 500px) {
+  .sandstrahlen-wrapper {
+    height: 160vh;
+  }
+  .sandstrahlen-text-wrapper > ul {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 470px) {
+  .sandstrahlen-wrapper {
+    height: 180vh;
+  }
+}
+
+@media (max-width: 400px) {
+  .sandstrahlen-text-wrapper > h1 {
+    font-size: 1.8rem;
+  }
+  .sandstrahlen-text-wrapper > p {
+    font-size: 0.9rem;
+  }
+  .sandstrahlen-text-wrapper > ul {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 351px) {
+  .sandstrahlen-wrapper {
+    height: 200vh;
+  }
+}
+
+@media (max-width: 300px) {
+  .sandstrahlen-text-wrapper {
+    height: 50%;
+  }
+}
+
+@media (max-width: 270px) {
+  .sandstrahlen-text-wrapper > h1 {
+    font-size: 1.4rem;
+  }
+}
+
+/* -----------------------Lackieren------------------- */
+
+.lackieren-wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: #0b0b0b;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.lackieren-img-wrapper {
+  width: 40%;
+  height: 70%;
+  background: url("../assets/images/Lackieren.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* opacity: 0; */
+}
+
+.lackieren-img-wrapper > img {
+  width: 100%;
+  height: 100%;
+}
+
+.lackieren-text-wrapper {
+  width: 40%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: -10rem;
+  /* opacity: 0; Start as invisible */
+  transform: translateY(3.125rem); /* Slide up effect */
+}
+
+.lackieren-text-wrapper > h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #f0f0f0;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lackieren-text-wrapper > p {
+  color: #f0f0f0;
+  height: 50%;
+  text-align: left;
+}
+
+@media (max-width: 830px) {
+  .lackieren-text-wrapper {
+    height: 50%;
+    margin-bottom: 4rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .lackieren-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    height: 160vh;
+  }
+
+  .lackieren-img-wrapper {
+    width: 80%;
+    height: 40%;
+    margin-bottom: 2rem;
+  }
+
+  .lackieren-text-wrapper {
+    width: 80%;
+    height: 40%;
+    margin-top: -1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .lackieren-img-wrapper {
+    height: 30%;
+  }
+
+  .lackieren-text-wrapper {
+    margin-top: -3rem;
+  }
+}
+
+@media (max-width: 250px) {
+  .lackieren-text-wrapper {
+    margin-top: -6rem;
+  }
+}
+
+/* ---------------------------------------Qualitätskontrolle und Messtechnik------------------------- */
+
+.mess-wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mess-img-wrapper {
+  width: 40%;
+  height: 70%;
+  background: url("../assets/images/Qualitätskontrolle\ und\ Messtechnik.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.mess-img-wrapper > img {
+  width: 100%;
+  height: 100%;
+}
+
+.mess-text-wrapper {
+  width: 40%;
+  min-height: 55vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: -8rem;
+  transform: translateY(3.125rem);
+}
+
+.mess-text-wrapper > h1 {
+  font-size: 2rem;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #0b0b0b;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mess-text-wrapper > p {
+  padding: 1rem;
+  color: #0b0b0b;
+  height: 30%;
+  text-align: left;
+}
+
+.mess-text-wrapper > h4 {
+  width: 100%;
+  padding: 1rem;
+}
+
+.mess-text-wrapper > ul {
+  color: #0b0b0b;
+  width: 65%;
+  padding: 0.8rem;
+  margin-left: -9rem;
+}
+
+@media (max-width: 1130px) {
+  .mess-text-wrapper > h1 {
+    font-size: 1.8rem;
+  }
+
+  .mess-text-wrapper > p {
+    font-size: 0.9rem;
+  }
+
+  .mess-text-wrapper > h4 {
+    font-size: 0.9rem;
+  }
+
+  .mess-text-wrapper > ul {
+    font-size: 0.9rem;
+    margin-left: -4rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .mess-text-wrapper {
+    width: 50%;
+  }
+  .mess-text-wrapper > h1 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .mess-text-wrapper > h1 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .mess-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 160vh;
+  }
+
+  .mess-text-wrapper {
+    width: 80%;
+    margin-top: -3rem;
+  }
+  .mess-img-wrapper {
+    width: 70%;
+    height: 40%;
+  }
+}
+
+@media (max-width: 500px) {
+  .mess-wrapper {
+    height: 160vh;
+  }
+
+  .mess-text-wrapper {
+    height: 50%;
+  }
+
+  .mess-text-wrapper > h4 {
+    margin-top: 2rem;
+  }
+
+  .mess-img-wrapper {
+    height: 30%;
+  }
+}
+
+@media (max-width: 420px) {
+  .mess-text-wrapper > h4 {
+    margin-top: 4rem;
+  }
+  .mess-wrapper {
+    height: 180vh;
+  }
+}
+
+@media (max-width: 363px) {
+  .mess-text-wrapper > h4 {
+    margin-top: 4rem;
+  }
+
+  .mess-text-wrapper > ul {
+    margin-top: -0.5rem;
+  }
+}
+
+@media (max-width: 340px) {
+  .mess-text-wrapper {
+    margin-top: -6rem;
+  }
+
+  .mess-text-wrapper > h4 {
+    margin-top: 6rem;
+  }
+}
+
+@media (max-width: 310px) {
+  .mess-text-wrapper > h4 {
+    margin-top: 6rem;
+  }
+
+  .mess-text-wrapper > h1 {
+    font-size: 1.2rem;
+  }
+  .mess-wrapper {
+    height: 180vh;
+  }
+}
+
+@media (max-width: 260px) {
+  .mess-text-wrapper > h4 {
+    margin-top: 8rem;
+  }
+}
+
+/* -------------------------------------Media queries----------------------------------- */
+
+@media (max-width: 1200px) {
+  /* -----------------Kompetenze Intro Page Max Width 1200--------------- */
+
+  .kompetenzen-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .kompetenzen-block-first {
+    width: 30%;
+  }
+
+  .kompetenzen-block-first,
+  .kompetenzen-block-second {
+    /* position: absolute; */
+    height: 100vh;
+  }
+
+  .kompetenzen-block-first {
+    /* left: 0; */
+    background-color: #0b0b0b; /* Dark background */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .kompetenzen-block-second {
+    width: 70%;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .kompetenzen-intro-text {
+    height: 38vh;
+    margin-top: 4.1rem;
+  }
+
+  .kompetenzen-intro-text > h1 {
+    font-size: 3rem;
+  }
+
+  .kompetenzen-intro-text > p {
+    font-size: 1.05rem;
+  }
+}
+
+/* -----------------Kompetenze Intro Page END Max Width 1200--------------- */
+
+/* -----------------Kompetenze Intro Page Max Width 800 --------------- */
+
+@media (max-width: 800px) {
+  .kompetenzen-block-first {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+  .kompetenzen-block-second {
+    width: 100%;
+  }
+  .responsive-logo {
+    display: block;
+  }
+
+  nav .responsive-logo a {
+    text-decoration: none;
+    color: #0b0b0b;
+  }
+
+  nav .responsive-logo a h1 {
+    font-weight: 600;
+  }
+
+  nav .responsive-logo p {
+    font-size: 0.9rem;
+    margin-left: 0.1rem;
+    font-weight: 400;
+  }
+}
+
+/* -----------------Kompetenze Intro Page END Max Width 800 --------------- */
+
+/* -----------------Kompetenze Intro Page Max Width 600 --------------- */
+
+@media (max-width: 600px) {
+  .kompetenzen-intro-text {
+    height: 38vh;
+    margin-top: 4.1rem;
+  }
+
+  .kompetenzen-intro-text > h1 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .kompetenzen-intro-text > p {
+    font-size: 1rem;
+  }
+}
+
+/* -----------------Kompetenze Intro Page END Max Width 600 --------------- */
+
+/* -----------------Kompetenze Intro Page Max Width 490 --------------- */
+@media (max-width: 490px) {
+  .kompetenzen-intro-text > h1 {
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+  .kompetenzen-intro-text > p {
+    font-size: 0.95rem;
+  }
+}
+
+/* -----------------Kompetenze Intro Page END Max Width 490 --------------- */
+
+@media (max-width: 360px) {
+  .kompetenzen-intro-text > h1 {
+    font-size: 1.7rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+  .kompetenzen-intro-text > p {
+    font-size: 0.9rem;
+    width: 120%;
+  }
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solherz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation Section  -->
+    <header>
+      <nav>
+        <!-- Logo -->
+        <div class="logo">
+          <a href="home.html"><h1>SOLHERZ</h1></a>
+          <p>Qualität Verbindet</p>
+        </div>
+
+        <!-- Burger Menu  -->
+
+        <div class="burger-menu" id="burgerMenu">
+          <div class="line line1"></div>
+          <div class="line line2"></div>
+          <div class="line line3"></div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <video class="video-background" autoplay loop muted>
+        <source src="./assets/video/background_video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="content">
+        <h1>Willkommen bei Solherz</h1>
+        <p>Ihrem zuverlässigen Partner für Bauteile und Produkte</p>
+      </div>
+    </section>
+
+    <div class="overlay" id="overlay">
+      <div class="overlay-x" id="overlayX">
+        <div class="overlay-x-line overlay-x-line1"></div>
+        <div class="overlay-x-line overlay-x-line2"></div>
+      </div>
+
+      <div class="overlay-hero-wrapper">
+        <div class="overlay-hero-logo">
+          <h1 id="overlay_hero_logo">SOLHERZ</h1>
+          <p id="overlay_hero_slogan">Qualität Verbindet</p>
+        </div>
+
+        <div class="overlay-logo-line" id="overlay-logo-line"></div>
+        <div class="overlay-links">
+          <ul>
+            <li>
+              <a href="home.html">Home</a>
+            </li>
+            <li>
+              <a href="./pages/kompetenzen.html">Kompetenzen</a>
+            </li>
+            <li>
+              <a href="./pages/projektleitung.html"
+                >Projektleitung für Standortaufbau</a
+              >
+            </li>
+            <li>
+              <a href="./pages/about.html">Über uns</a>
+            </li>
+            <li>
+              <a href="./pages/contact.html">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Ovo treba sredit -->
+      <div class="overlay-footer-wrapper">
+        <div class="overlay-footer-contact-wrapper">
+          <div class="overlay-footer-contact-first-block">
+            <h4 id="street">Favoritenstraße 24</h4>
+            <h4 id="city">1040 Wien</h4>
+            <h4 id="state">Österreich</h4>
+          </div>
+
+          <div class="overlay-footer-contact-second-block">
+            <h4 id="contact-email">Email: office@solherz.at</h4>
+            <h4 id="contact-telefon">Telefon: +43 650 2608369</h4>
+          </div>
+        </div>
+
+        <div class="overlay-footer-icons-wrapper">
+          <div class="first-icon">
+            <i class="icon ion-logo-linkedin" id="linkedIn-logo-overlay"></i>
+          </div>
+          <div class="second-icon">
+            <i class="icon ion-logo-facebook" id="facebook-logo-overlay"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

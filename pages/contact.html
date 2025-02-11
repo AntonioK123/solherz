@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="de-AT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solherz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/contact.css" />
+  </head>
+  <body>
+    <!-- Navigation Section  -->
+    <header>
+      <nav>
+        <!-- Logo -->
+        <div class="über-logo">
+          <a href="../home.html"><h1>SOLHERZ</h1></a>
+          <p>Qualität Verbindet</p>
+        </div>
+
+        <!-- Burger Menu  -->
+
+        <div class="burger-menu-kompetenzen" id="burgerMenu">
+          <div class="line line1"></div>
+          <div class="line line2"></div>
+          <div class="line line3"></div>
+        </div>
+      </nav>
+    </header>
+
+    <!------------------------------------------------ Overlay Menu  ------------------------------------->
+
+    <div class="overlay" id="overlay">
+      <div class="overlay-x" id="overlayX">
+        <div class="overlay-x-line overlay-x-line1"></div>
+        <div class="overlay-x-line overlay-x-line2"></div>
+      </div>
+
+      <div class="overlay-hero-wrapper">
+        <div class="overlay-hero-logo">
+          <h1 id="overlay_hero_logo">SOLHERZ</h1>
+          <p id="overlay_hero_slogan">Qualität Verbindet</p>
+        </div>
+        <div class="overlay-logo-line" id="overlay-logo-line"></div>
+
+        <div class="overlay-links">
+          <ul>
+            <li>
+              <a href="../home.html">Home</a>
+            </li>
+            <li>
+              <a href="./kompetenzen.html">Kompetenzen</a>
+            </li>
+            <li>
+              <a href="./projektleitung.html"
+                >Projektleitung für Standortaufbau</a
+              >
+            </li>
+            <li>
+              <a href="./about.html">Über uns</a>
+            </li>
+            <li>
+              <a href="./contact.html">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="overlay-footer-wrapper">
+        <div class="overlay-footer-contact-wrapper">
+          <div class="overlay-footer-contact-first-block">
+            <h4 id="street">Favoritenstraße 24</h4>
+            <h4 id="city">1040 Wien</h4>
+            <h4 id="state">Österreich</h4>
+          </div>
+
+          <div class="overlay-footer-contact-second-block">
+            <h4 id="contact-email">Email: office@solherz.at</h4>
+            <h4 id="contact-telefon">Telefon: +43 650 2608369</h4>
+          </div>
+        </div>
+
+        <div class="overlay-footer-icons-wrapper">
+          <div class="first-icon">
+            <i class="icon ion-logo-linkedin" id="linkedIn-logo-overlay"></i>
+          </div>
+          <div class="second-icon">
+            <i class="icon ion-logo-facebook" id="facebook-logo-overlay"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--------------------------------------- Über uns Hero Part --------------------------------------->
+    <section class="contact-wrapper">
+      <div>
+        <div class="contact-first-block">Kontaktieren Sie uns</div>
+        <div class="contact-second-block">
+          <div class="contact-title-wrapper">
+            <h1>Kontaktieren Sie uns</h1>
+            <h5>
+              Füllen Sie das Formular aus und wir werden Sie so schnell wie
+              möglich kontaktieren
+            </h5>
+          </div>
+          <form
+            id="contact-form"
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            class="form-wrapper"
+          >
+            <input type="hidden" name="access_key" value="YOUR_API_KEY_HERE" />
+
+            <div class="form-first-group-wrapper">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Ihren Namen"
+                required
+              />
+
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Ihre Email"
+                required
+              />
+
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Telefonnummer"
+                required
+              />
+
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Unternehmen"
+                required
+              />
+            </div>
+
+            <div class="form-second-group-wrapper">
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Nachricht"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Senden</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="../main.js"></script>
+  </body>
+</html>

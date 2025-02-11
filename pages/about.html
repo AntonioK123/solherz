@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="de-AT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solherz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/about.css" />
+  </head>
+  <body>
+    <!-- Navigation Section  -->
+    <header>
+      <nav>
+        <!-- Logo -->
+        <div class="über-logo">
+          <a href="../home.html"><h1>SOLHERZ</h1></a>
+          <p>Qualität Verbindet</p>
+        </div>
+
+        <!-- Burger Menu  -->
+
+        <div class="burger-menu-kompetenzen" id="burgerMenu">
+          <div class="line line1"></div>
+          <div class="line line2"></div>
+          <div class="line line3"></div>
+        </div>
+      </nav>
+    </header>
+
+    <!------------------------------------------------ Overlay Menu  ------------------------------------->
+
+    <div class="overlay" id="overlay">
+      <div class="overlay-x" id="overlayX">
+        <div class="overlay-x-line overlay-x-line1"></div>
+        <div class="overlay-x-line overlay-x-line2"></div>
+      </div>
+
+      <div class="overlay-hero-wrapper">
+        <div class="overlay-hero-logo">
+          <h1 id="overlay_hero_logo">SOLHERZ</h1>
+          <p id="overlay_hero_slogan">Qualität Verbindet</p>
+        </div>
+        <div class="overlay-logo-line" id="overlay-logo-line"></div>
+
+        <div class="overlay-links">
+          <ul>
+            <li>
+              <a href="../home.html">Home</a>
+            </li>
+            <li>
+              <a href="./kompetenzen.html">Kompetenzen</a>
+            </li>
+            <li>
+              <a href="./projektleitung.html"
+                >Projektleitung für Standortaufbau</a
+              >
+            </li>
+            <li>
+              <a href="./about.html">Über uns</a>
+            </li>
+            <li>
+              <a href="./contact.html">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="overlay-footer-wrapper">
+        <div class="overlay-footer-contact-wrapper">
+          <div class="overlay-footer-contact-first-block">
+            <h4 id="street">Favoritenstraße 24</h4>
+            <h4 id="city">1040 Wien</h4>
+            <h4 id="state">Österreich</h4>
+          </div>
+
+          <div class="overlay-footer-contact-second-block">
+            <h4 id="contact-email">Email: office@solherz.at</h4>
+            <h4 id="contact-telefon">Telefon: +43 650 2608369</h4>
+          </div>
+        </div>
+
+        <div class="overlay-footer-icons-wrapper">
+          <div class="first-icon">
+            <i class="icon ion-logo-linkedin" id="linkedIn-logo-overlay"></i>
+          </div>
+          <div class="second-icon">
+            <i class="icon ion-logo-facebook" id="facebook-logo-overlay"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--------------------------------------- Über uns Hero Part --------------------------------------->
+    <section class="über-uns-wrapper">
+      <div>
+        <div class="über-block-first">
+          <h1>Über uns</h1>
+        </div>
+        <div class="über-block-second">
+          <div class="über-paragraph">
+            <h4>
+              Solherz wurde mit einer klaren Vision ins Leben gerufen: Die
+              europäische Industrie, insbesondere in der DACH-Region, steht vor
+              der dringenden Aufgabe, Produktionskosten zu optimieren und ihre
+              Wettbewerbsfähigkeit nachhaltig zu sichern. Unsere Mission ist es,
+              Unternehmen dabei zu unterstützen, diese Herausforderungen zu
+              meistern.
+            </h4>
+          </div>
+          <div class="über-paragraph">
+            <h4>
+              Durch die strategische Verlagerung der Produktion zu
+              qualitätsorientierten und kosteneffizienten Herstellern in
+              Südosteuropa bieten wir eine Lösung, die höchste
+              Qualitätsstandards mit wirtschaftlicher Effizienz verbindet.
+            </h4>
+          </div>
+          <div class="über-paragraph">
+            <h4>
+              Unser Ansatz basiert auf einer sorgfältigen Auswahl unserer
+              Partner: Solherz stellt Unternehmen in der DACH-Region die
+              Dienstleistungen erstklassiger Hersteller aus Südosteuropa zur
+              Verfügung. Dabei gewährleisten wir, dass unsere Kunden von einer
+              verlässlichen, leistungsstarken Lieferkette profitieren und ihre
+              Produktionsziele effizient erreichen können.
+            </h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="biographie-wrapper">
+      <div class="bio-content-wrapper">
+        <div>
+          <div class="first-block-bio">
+            <h1>Biographie des Gründers</h1>
+            <div class="bio-paragraph">
+              <h4>
+                Mit einem Abschluss in Maschinenbau von der TU Wien und
+                langjähriger Erfahrung in der Industrie verfüge ich über eine
+                breite Expertise in der Entwicklung, Optimierung und Leitung
+                technischer Projekte. Mein beruflicher Werdegang hat mich durch
+                verschiedene anspruchsvolle Rollen geführt, die von der
+                Entwicklung innovativer Spritzgießmaschinen bis hin zur globalen
+                Verantwortung für komplexe Maschinen und Produkten bei Andritz
+                Pulp & Paper reichen. Dabei habe ich sowohl technisches als auch
+                strategisches Know-how aufgebaut, das ich nun in meiner neuen
+                Firma einbringe.
+              </h4>
+            </div>
+            <div class="bio-links-block">
+              <div>
+                <i class="icon ion-logo-linkedin" id="linkedIn-logo-bio"></i>
+                <i class="icon ion-logo-facebook" id="facebook-logo-bio"></i>
+              </div>
+            </div>
+          </div>
+          <div class="second-block-bio">
+            <div class="bio-img"></div>
+          </div>
+
+          <div class="bio-links-block-responsive">
+            <div>
+              <i class="icon ion-logo-linkedin" id="linkedIn-logo-bio"></i>
+              <i class="icon ion-logo-facebook" id="facebook-logo-bio"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="../main.js"></script>
+  </body>
+</html>

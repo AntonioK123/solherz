@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="de-AT">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solherz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    
+    <link
+    href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/kompetenzen.css" />
+  </head>
+  <body>
+    <!-- Navigation Section  -->
+    <header>
+      <nav>
+        <!-- Logo -->
+        <div class="logo">
+          <a href="../home.html"><h1>SOLHERZ</h1></a>
+          <p>Qualität Verbindet</p>
+        </div>
+
+
+        <div class="responsive-logo">
+          <a href="../home.html"><h1>SOLHERZ</h1></a>
+          <p>Qualität Verbindet</p>
+        </div>
+
+        
+        <!-- Burger Menu  -->
+
+        <div class="burger-menu-kompetenzen" id="burgerMenu">
+          <div class="line line1"></div>
+          <div class="line line2"></div>
+          <div class="line line3"></div>
+        </div>
+      </nav>
+    </header>
+
+
+
+    <!------------------------------------------------ Overlay Menu  ------------------------------------->
+
+
+    
+    <div class="overlay" id="overlay">
+      <div class="overlay-x" id="overlayX">
+        <div class="overlay-x-line overlay-x-line1"></div>
+        <div class="overlay-x-line overlay-x-line2"></div>
+      </div>
+
+      <div class="overlay-hero-wrapper">
+        <div class="overlay-hero-logo">
+          <h1 id="overlay_hero_logo">SOLHERZ</h1>
+          <p id="overlay_hero_slogan">Qualität Verbindet</p>
+        </div>
+        <div class="overlay-logo-line" id="overlay-logo-line"></div>
+
+        <div class="overlay-links">
+          <ul>
+            <li>
+              <a href="../home.html">Home</a>
+            </li>
+            <li>
+              <a href="./pages/kompetenzen.html">Kompetenzen</a>
+            </li>
+            <li>
+              <a href="./projektleitung.html">Projektleitung für Standortaufbau</a>
+            </li>
+            <li>
+              <a href="./about.html">Über uns</a>
+            </li>
+            <li>
+              <a href="./contact.html">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="overlay-footer-wrapper">
+        <div class="overlay-footer-contact-wrapper">
+          <div class="overlay-footer-contact-first-block">
+            <h4 id="street">Favoritenstraße 24</h4>
+            <h4 id="city">1040 Wien</h4>
+            <h4 id="state">Österreich</h4>
+          </div>
+
+          <div class="overlay-footer-contact-second-block">
+            <h4 id="contact-email">Email: office@solherz.at</h4>
+            <h4 id="contact-telefon">Telefon: +43 650 2608369</h4>
+          </div>
+        </div>
+
+        <div class="overlay-footer-icons-wrapper">
+          <div class="first-icon">
+            <i class="icon ion-logo-linkedin" id="linkedIn-logo-overlay"></i>
+          </div>
+          <div class="second-icon">
+            <i class="icon ion-logo-facebook" id="facebook-logo-overlay"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--------------------------------------- Kompetenzen Hero Part --------------------------------------->
+    <section class="kompetenzen-wrapper">
+      <div class="kompetenzen-block-first">
+        <div class="kompetenzen-links-wrapper">
+          <a href="#drehen">Drehen</a>
+          <a href="#fräsen">Fräsen</a>
+          <a href="#schleifen">Schleifen</a>
+          <a href="#schweißen">Schweißen</a>
+          <a href="#umformen">Umformen</a>
+          <a href="#schneiden">Schneiden</a>
+          <a href="#wärmebehandlung">Wärmebehandlung</a>
+          <a href="#sandstrahlen">Sandstrahlen</a>
+          <a href="#lackieren">Lackieren</a>
+          <a href="#qualitätskontrolle">Qualitätskontrolle & Messtechnik</a>
+        </div>
+      </div>
+      <div class="kompetenzen-block-second">
+        <div class="kompetenzen-intro-text">
+          <h1>Kompetenzen</h1>
+          <p>
+            Unsere Kompetenzen erstrecken sich über alle üblichen
+            Fertigungsmethoden. Vom Drehen und Fräßen, übers Schweißen, bis hin
+            zur Montage von Baugruppen können wir Ihnen den gesamten
+            Produktionsprozess aus eine Hand anbieten.
+          </p>
+        </div>
+        <div class="arrow-wrapper">
+          <h3>Mehr...</h3>
+          <i class="animate-icon icon ion-md-arrow-down"></i>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------------------- Kompetenzen Inhalt --------------------------------->
+    <section class="kompetenzen-inhalt-wrapper">
+      <!-- ------------------------Drehen---------------------- -->
+      <div class="drehen-wrapper" id="drehen">
+        <div
+          class="animate__animated animate__fadeIn drehen-img-wrapper"
+          style="animation-delay: 1s"
+        ></div>
+        <div class="drehen-text-wrapper">
+          <h1>Drehen</h1>
+          <p>
+            Mit unseren hochmodernen Drehmaschinen bieten wir präzise und
+            zuverlässige Bearbeitung, die Ihren Anforderungen gerecht wird.
+            Unsere Kapazitäten umfassen:
+          </p>
+          <ul>
+            <li><p><strong>Maximale Drehbearbeitungslänge :</strong> bis zu 2500 mm </p></li>
+            <li><p><strong>Maximaler Drehdurchmesser :</strong> bis zu 900 mm </p></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ---------------------Fräsen---------------- -->
+      <div class="fräsen-wrapper" id="fräsen">
+        <div class="fräsen-text-wrapper">
+          <h1>Fräsen</h1>
+          <p>
+            Unsere leistungsstarken CNC-Fräsmaschinen garantieren höchste
+            Präzision und Flexibilität bei der Bearbeitung verschiedenster
+            Werkstücke.
+          </p>
+          <h4>Vertikale CNC-Fräsmaschinen</h4>
+          <ul>
+            <li>Maximale Arbeitsbereiche: XYZ = 3000 mm x 1250 mm x 400 mm</li>
+          </ul>
+          <h4>Horizontale CNC-Fräsmaschinen</h4>
+          <ul class="second-list">
+            <li>Maximale Arbeitsbereiche: XYZ = 2000 mm x 2000 mm x 1250 mm</li>
+            <li><h4>Zusätzliche Achsen:</h4></li>
+            <!-- <li> -->
+              <ul class="nested-list">
+                <li>B-Achse: Rotation um 360° für maximale Flexibilität</li>
+                <li>
+                  W-Achse: Erweiterung um 400 mm für tiefere Bearbeitungen
+                <!-- </li> -->
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="animate__animated animate__fadeIn fräsen-img-wrapper"
+          style="animation-delay: 1s"
+        ></div>
+      </div>
+
+       <!-- ------------------------Schleifen---------------------- -->
+       <div class="schleifen-wrapper" id="schleifen">
+        <div
+          class="animate__animated animate__fadeIn schleifen-img-wrapper"
+          style="animation-delay: 1s"
+        ></div>
+        <div class="schleifen-text-wrapper">
+          <h1>Schleifen</h1>
+          <p>
+            Auf den modernsten CNC Schleifmaschinen für Radial-, Plan-, und Koordinatenschleifen,
+            bearbeiten wir alle Arten von Spindeln, Ausfräsungen und Platten. 
+            Unser Unternehmen bietet Ihnen maßgeschneiderte Lösungen für Ihre Schleifanforderungen – von der Beratung bis zur Ausführung.
+            Kontaktieren Sie uns, um mehr über unser Leistungsspektrum zu erfahren!
+          </p>
+          
+        </div>
+      </div>
+
+      <!-- -------------------Schweißen----------------------- -->
+      <div class="schweißen-wrapper" id="schweißen">
+        <div class="schweißen-text-wrapper">
+          <h1>Schweißen</h1>
+          <p>
+            Wir bieten eine breite Palette an Schweißtechniken, die auf die speziellen Anforderungen unserer Kunden abgestimmt sind. 
+            Unsere Verfahren garantieren höchste Qualität und Präzision bei jeder Anwendung.
+          </p>
+        
+           
+         <ul>
+          <li><h4>Wolfram-Inertgas-Schweißen (WiG)</h4></li>
+          <li><h4>Metall-Inertgas/Metall-Aktivgasschweißen (MIG/MAG)</h4></li>
+         </ul>  
+         
+        </div>
+        <div
+          class="animate__animated animate__fadeIn schweißen-img-wrapper"
+          style="animation-delay: 1s"
+        ></div>
+      </div>
+
+
+      <!-- --------------------Umformen--------------- -->
+   
+      <div class="umformen-wrapper" id="umformen">
+        <div
+          class="animate__animated animate__fadeIn umformen-img-wrapper"
+          style="animation-delay: 1s"
+        ></div>
+        <div class="umformen-text-wrapper">
+          <div class="umformen-first-block">
+          <h1>Umformen</h1>
+          <ul class="pressen-list-title">
+            <li><h4>Pressen</h4></li>
+          </ul>
+
+          <p>
+            Unsere hochmodernen Pressenanlagen bieten präzise und leistungsstarke Lösungen für eine Vielzahl von Anwendungen 
+            in der Metallbearbeitung und Fertigungsindustrie. Mit innovativer Technologie und einer breiten Palette von Kapazitäten 
+            erfüllen unsere Maschinen die höchsten Anforderungen an Qualität und Effizienz. 
+            Im Folgenden finden Sie die wichtigsten Dimensionen und Kapazitäten unserer Pressenanlagen.
+          </p>
+          <h5>Dimensionen :</h5>
+          <ul class="pressen-list">
+            <li><p><strong>Werkstückgröße XY :</strong> Bis 2000 mm </p></li>
+            <li><p><strong>Druckkraft :</strong> 6.000 kN.</p></li>
+            <li><p><strong>Materialdicke :</strong> Bis 20 mm </p></li>
+            
+          </ul>
+        </div>
+        <div class="umformen-second-block">
+          <ul class="biegen-list-title">
+            <li><h4>Biegen</h4></li>
+          </ul>
+
+          <p>
+            Unsere hochmodernen Maschinen garantieren präzise und vielseitige Fertigungsmöglichkeiten.
+             Im Folgenden finden Sie die wichtigsten Dimensionen und Kapazitäten unserer Anlagen, 
+             die für eine Vielzahl von Anwendungen in der Metallbearbeitung geeignet sind. 
+          </p>
+          <h5>Dimensionen :</h5>
+          <ul class="biegen-list">
+            <li><p><strong>Arbeitslänge :</strong> Bis zu 4000 mm </p></li>
+            <li><p><strong>Druckkraft :</strong> 4000 kN.</p></li>
+            
+          </ul>
+        </div>
+         <div class="umformen-third-block">
+          <ul class="walzen-list-title">
+            <li><h4>Walzen</h4></li>
+          </ul>
+
+          <p>
+            Unsere Walzanlagen bieten innovative Lösungen für die präzise und effiziente Umformung von Metallen.
+             Ob für die Herstellung dünner Bleche, dicker Platten oder komplexer Profile – 
+             unsere modernen Walzmaschinen garantieren höchste Qualität und Vielseitigkeit
+              für unterschiedlichste Anwendungen.
+          </p>
+          <h5>Dimensionen :</h5>
+          <ul class="walzen-list">
+            <li><p><strong>Materialdicke :</strong> Bis zu 40 mm </p></li>
+            <li><p><strong>Materialbreite :</strong> Bis zu 5 m </p></li>
+            
+          </ul>
+         </div>
+        </div>
+      </div>
+
+      <!-- ------------------Schneiden-------------------->
+
+      <div class="schneiden-wrapper" id="schneiden">
+        <div class="schneiden-text-wrapper">
+          <div class="schneiden-first-block">
+          <h1>Schneiden</h1>
+          <ul class="laserschneiden-list-title">
+            <li><h4>Laserschneiden</h4></li>
+          </ul>
+          <p>
+            Das Laserschneiden ist ein hochpräzises Verfahren, 
+            das vor allem bei dünneren Materialien und komplexen Konturen Anwendung findet. 
+            Die Genauigkeit und die geringe Wärmeentwicklung machen es besonders für feine Schnitte und filigrane Bauteile geeignet.
+          </p>
+          <ul class="laser-list">
+            <li><p><strong>Arbeitsfläche :</strong> 3000 x 1500 mm </p></li>
+            <li><p><strong>Maximale Materialstärke :</strong> 30 mm </p></li>
+            
+          </ul>
+        </div>
+           
+        <div class="schneiden-second-block">
+          <ul class="plasmaschneiden-list-title">
+            <li><h4>Plasmaschneiden</h4></li>
+          </ul>
+          <p>
+            Das Plasmaschneiden ist eine schnelle und leistungsstarke Methode,
+             die vor allem bei dickeren Metallen bevorzugt wird. 
+             Diese Technik wird häufig im Stahlbau und in der Schwerindustrie eingesetzt,
+              da sie auch bei dicken Materialien saubere Schnittkanten liefert.
+          </p>
+          <ul class="plasma-list">
+            <li><p><strong>Arbeitsfläche :</strong> 2000 x 12000 mm </p></li>
+            <li><p><strong>Maximale Materialstärke :</strong> 200 mm </p></li>
+            
+          </ul>
+        </div>
+
+
+        <div class="schneiden-third-block">
+          <ul class="wasserstrahlschneiden-list-title">
+            <li><h4>Wasserstrahlschneiden</h4></li>
+          </ul>
+          <p>
+            Das Wasserstrahlschneiden ist ein vielseitiges Verfahren, 
+            das nahezu alle Materialien – von Metall über Glas bis hin zu Keramik – bearbeiten kann. 
+            Es eignet sich insbesondere für temperaturempfindliche Materialien, da kein thermischer Einfluss erfolgt.
+             Seine Flexibilität macht es ideal für anspruchsvolle Anwendungen in verschiedenen Industriezweigen.
+          </p>
+          <ul class="wasserstrahl-list">
+            <li><p><strong>Arbeitsfläche :</strong> 2000x4000 mm </p></li>
+            <li><p><strong>Maximale Materialstärke :</strong> 200 mm </p></li>
+            
+          </ul>
+        </div>
+
+         
+        </div>
+        <div
+          class="animate__animated animate__fadeIn schneiden-img-wrapper"
+          style="animation-delay: 1s"
+        ></div>
+      </div>
+
+      <!------------------------------------------------- Wärmebehandlung ------------------------------------------->
+      <div class="wärmebehandlung-wrapper" id="wärmebehandlung">
+        <div
+          class="animate__animated animate__fadeIn wärmebehandlung-img-wrapper"
+          style="animation-delay: 1s"
+        ></div>
+        <div class="wärmebehandlung-text-wrapper">
+          <h1>Wärmebehandlung</h1>
+          <p>
+            Wir bieten eine umfassende Palette an Wärmebehandlungsdiensten, die mit unserer hochmodernen Ofentechnologie durchgeführt werden.
+             Unsere neueste Anlage ist speziell dafür ausgelegt, unterschiedliche Anforderungen in der Wärmebehandlung zu erfüllen.
+          </p>
+          <ul>
+            <li><p><strong>Maximale Anwendung :</strong> Glühen, Anlassen und Härten </p></li>
+            <li><p><strong>Abmessungen :</strong> 7000 x 3000 x 3000 mm </p></li>
+          </ul>
+        </div>
+      </div>
+
+
+      <!-- ----------------------------------------Sandstrahlen------------------ -->
+
+      <div class="sandstrahlen-wrapper" id="sandstrahlen">
+        <div class="sandstrahlen-text-wrapper">
+          <h1>Sandstrahlen</h1>
+          <p>
+            Der Sandstrahlprozess wird von erfahrenen Fachkräften durchgeführt, die bereit sind, alle Anforderungen unserer Kunden zu erfüllen.
+             Unsere Maschine ist in der Lage, sowohl kleine Teile und Baugruppen als auch größere Strukturen zu bearbeiten.
+              Unsere Sandstrahltechnik eignet sich für die Oberflächenvorbehandlung von verschiedenen Materialien und
+               trägt zur Verbesserung der Haftung für nachfolgende Beschichtungen oder zur Entfernung von Rost und Verunreinigungen bei.
+          </p>
+        
+           
+         <ul>
+          <li><p><strong>Maximale Größe :</strong> 10000 mm x 8000 mm x 3600 mm </p></li>
+         </ul>  
+         
+        </div>
+        <div
+          class="animate__animated animate__fadeIn sandstrahlen-img-wrapper"
+          style="animation-delay: 1s"
+        ></div>
+      </div>
+
+      <!-- -----------------------------------------------------Lackieren------------------------------------- -->
+
+
+      <div class="lackieren-wrapper" id="lackieren">
+        <div
+          class="animate__animated animate__fadeIn lackieren-img-wrapper"
+          style="animation-delay: 1s"
+        ></div>
+        <div class="lackieren-text-wrapper">
+          <h1>Lackieren</h1>
+          <p>
+            Wir bieten <strong>Lackierverfahren</strong>, die sowohl funktionale als auch ästhetische Anforderungen erfüllen. 
+            Unsere Lackiererei ist ausgestattet, um verschiedene Werkstücke in höchster Qualität zu bearbeiten.
+             Dabei garantieren wir eine gleichmäßige, langlebige Beschichtung, die optimalen Schutz und eine ansprechende Oberfläche bietet.
+          </p>
+          
+        </div>
+      </div>
+
+                  <!----------------------------------Qualitätskontrolle und Messtechnik ------------------------- -->
+
+                  <div class="mess-wrapper" id="qualitätskontrolle">
+                    <div class="mess-text-wrapper">
+                      <h1>Qualitätskontrolle und Messtechnik</h1>
+                      <p>
+                        In unserer Metallwerkstatt steht die <strong>Qualitätskontrolle</strong> an oberster Stelle, um sicherzustellen, 
+                        dass jedes gefertigte Teil den höchsten Standards entspricht. Dank modernster <strong>Messtechnik</strong> und einer 
+                        systematischen Kontrolle garantieren wir die exakte Fertigung 
+                        und Funktionalität unserer Produkte – vom ersten bis zum letzten Schritt.
+                      </p>
+                    
+                      <h4>Unsere Dienstleistungen </h4>
+                       
+                     <ul>
+                      <li><p><strong>Visuelle Inspektion</strong> </p></li>
+                      <li><p><strong>Messungen und Prüfungen</strong> </p></li>
+                      <li><p><strong>Funktionstests</strong> </p></li>
+                      <li><p><strong>Wärmebehandlungskontrolle</strong> </p></li>
+                      <li><p><strong>Zerstörungsfrei Prüfverfahren</strong> </p></li>
+                      <li><p><strong>Optische Messsysteme</strong> </p></li>
+
+                     </ul>  
+                     
+                    </div>
+                    <div
+                      class="animate__animated animate__fadeIn mess-img-wrapper"
+                      style="animation-delay: 1s"
+                    ></div>
+                  </div>
+
+    </section>
+
+    <script src="../main.js"></script>
+  </body>
+</html>

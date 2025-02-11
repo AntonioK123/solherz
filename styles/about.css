@@ -1,0 +1,416 @@
+/* -----------------------------Über uns----------------------------- */
+
+.burger-menu-kompetenzen {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1.875rem;
+  height: 0.938rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.burger-menu-kompetenzen .line {
+  background-color: black;
+  height: 0.125rem;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+nav .über-logo a {
+  text-decoration: none;
+  color: black;
+}
+
+nav .über-logo p {
+  color: black;
+  font-size: 0.8rem;
+}
+
+nav .über-logo a h1 {
+  font-weight: 500;
+  font-size: 2rem;
+  margin-left: -1.8rem;
+}
+
+.über-uns-wrapper {
+  width: 100%;
+  min-height: 120vh;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.über-uns-wrapper > div {
+  width: 80%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.über-block-first {
+  width: 80%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+}
+
+.über-block-first > h1 {
+  font-weight: 400;
+  font-size: 2.3rem;
+  text-transform: uppercase;
+}
+
+.über-block-second {
+  width: 100%;
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.über-paragraph > h4 {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.biographie-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  margin-top: -10rem;
+}
+
+.bio-content-wrapper {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  background-color: #0b0b0b;
+  margin-bottom: 5rem;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
+}
+
+.bio-content-wrapper > div {
+  width: 95%;
+  display: flex;
+}
+
+.first-block-bio {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #fff;
+}
+
+.first-block-bio > h1 {
+  font-weight: 300;
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  height: 32%;
+  display: flex;
+  align-items: center;
+}
+
+.bio-paragraph > h4 {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.second-block-bio {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bio-img {
+  background: url("../assets/images/Soldo_Mihovil_034.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 80%;
+  height: 70%;
+}
+
+.bio-links-block {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bio-links-block > div {
+  width: 15%;
+  height: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bio-links-block > div > i {
+  font-size: 2rem;
+}
+
+.bio-links-block-responsive {
+  display: none;
+}
+
+/* --------------------------Media Queries----------------------- */
+
+@media (max-width: 1245px) {
+  .über-block-first > h1 {
+    font-size: 2rem;
+  }
+
+  .über-paragraph > h4 {
+    font-size: 0.9rem;
+  }
+
+  .first-block-bio > h1 {
+    font-size: 2rem;
+  }
+
+  .bio-paragraph > h4 {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 1045px) {
+  .über-block-first > h1 {
+    font-size: 1.6rem;
+  }
+
+  .über-paragraph > h4 {
+    font-size: 0.85rem;
+  }
+
+  .first-block-bio > h1 {
+    font-size: 1.6rem;
+  }
+
+  .bio-paragraph > h4 {
+    font-size: 0.85rem;
+  }
+
+  .bio-links-block > div {
+    width: 20%;
+  }
+}
+
+@media (max-width: 950px) {
+  .über-uns-wrapper {
+    height: 110vh;
+  }
+}
+
+@media (max-width: 850px) {
+  .über-uns-wrapper {
+    height: 140vh;
+  }
+
+  .über-paragraph {
+    margin-top: 1.5rem;
+  }
+
+  .bio-content-wrapper {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .bio-content-wrapper {
+    height: 120vh;
+  }
+
+  .bio-content-wrapper > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .first-block-bio {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #fff;
+  }
+
+  .first-block-bio > h1 {
+    font-size: 1.4rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bio-paragraph > h4 {
+    font-weight: 500;
+    font-size: 0.8rem;
+  }
+
+  .second-block-bio {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bio-img {
+    width: 100%;
+  }
+
+  .bio-links-block {
+    display: none;
+  }
+
+  .bio-links-block-responsive {
+    display: block;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .bio-links-block-responsive > div {
+    width: 15%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .bio-links-block-responsive > div > i {
+    font-size: 2rem;
+    color: #fff;
+  }
+}
+
+@media (max-width: 675px) {
+  .über-uns-wrapper {
+    height: 130vh;
+  }
+
+  .bio-content-wrapper {
+    margin-top: 6rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .über-uns-wrapper {
+    height: 140vh;
+  }
+}
+
+@media (max-width: 580px) {
+  .first-block-bio > h1 {
+    font-size: 1.2rem;
+  }
+
+  .bio-paragraph > h4 {
+    font-size: 0.75rem;
+  }
+
+  .über-uns-wrapper > div {
+    margin-top: -4rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .first-block-bio > h1 {
+    font-size: 1rem;
+  }
+  .bio-links-block-responsive > div {
+    width: 25%;
+  }
+
+  .über-block-second > div {
+    height: 150vh;
+  }
+}
+
+@media (max-width: 460px) {
+  .bio-content-wrapper {
+    margin-top: 8rem;
+  }
+}
+
+@media (max-width: 435px) {
+  .first-block-bio {
+    margin-top: 1rem;
+  }
+  .bio-paragraph {
+    padding-top: 1rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .über-uns-wrapper {
+    height: 160vh;
+  }
+
+  .first-block-bio > h1 {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  .bio-paragraph {
+    padding-top: 2rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .über-uns-wrapper {
+    height: 140vh;
+  }
+
+  .biographie-wrapper > div {
+    margin-top: 12rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .biographie-wrapper > div {
+    margin-top: 15rem;
+  }
+}
+
+@media (max-width: 330px) {
+  .biographie-wrapper > div {
+    margin-top: 18rem;
+  }
+}
+
+@media (max-width: 310px) {
+  .biographie-wrapper > div {
+    margin-top: 20rem;
+  }
+}
+
+@media (max-width: 280px) {
+  .biographie-wrapper > div {
+    margin-top: 22rem;
+  }
+}
+
+@media (max-width: 272px) {
+  .biographie-wrapper > div {
+    margin-top: 25rem;
+  }
+}
+
+@media (max-width: 258px) {
+  .biographie-wrapper > div {
+    margin-top: 28rem;
+  }
+}

@@ -1,0 +1,545 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+/* Navbar container */
+nav {
+  /* background-color: black; */
+  /* Ovaj background color treba vidit */
+  padding: 2rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+}
+
+nav .logo a {
+  text-decoration: none;
+  color: #f0f0f0;
+  /* margin-left: -2.3rem; */
+}
+
+nav .logo p {
+  color: #f0f0f0;
+  font-size: 0.8rem;
+}
+
+nav .logo a h1 {
+  font-weight: 500;
+  font-size: 2rem;
+  margin-left: -1.8rem;
+}
+
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2rem;
+  height: 0.93rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.burger-menu .line {
+  background-color: white;
+  height: 0.1rem;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+/* Overlay menu styling */
+.overlay {
+  position: fixed;
+  top: -100%; /* Start off-screen, at the top */
+  left: 0;
+  right: 0;
+  background-color: #0b0b0b;
+  display: flex;
+  flex-direction: column;
+  z-index: 9; /* Overlay is above the navbar */
+  align-items: center;
+  justify-content: space-around;
+  width: 100%; /* Full width */
+  height: 100vh; /* Full height of the viewport */
+  overflow: hidden; /* Prevent overflow when sliding */
+  transition: all 0.3s ease; /* Smooth transition when sliding */
+}
+
+.overlay-hero-wrapper {
+  margin-top: 6rem;
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+}
+.overlay-hero-logo {
+  color: white;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.overlay-logo-line {
+  position: absolute;
+  border-right: 0.05rem solid #f0f0f0;
+  width: 45%;
+  height: 40vh;
+  z-index: 12;
+}
+
+.overlay-hero-logo > h1 {
+  font-weight: 500;
+  font-size: 5.5rem;
+}
+
+.overlay-links ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  position: relative; /* So that the X is positioned absolutely */
+  height: 40vh;
+  color: white;
+  list-style-type: none;
+  text-transform: uppercase;
+  padding: 2rem;
+  font-weight: 300;
+  white-space: nowrap;
+  max-width: 35rem;
+}
+
+/* Initially hide the list items */
+.overlay-links ul li {
+  opacity: 0;
+  transform: translateY(3.125rem);
+}
+
+/* Overlay Footer */
+
+.overlay-footer-wrapper {
+  width: 90vw;
+  height: 20%;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.overlay-footer-contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: left;
+  height: 100%;
+  width: 55%;
+}
+
+.overlay-footer-contact-first-block {
+  width: 32%;
+}
+
+.overlay-footer-contact-first-block > h4 {
+  font-weight: 400;
+}
+
+.overlay-footer-contact-second-block > h4 {
+  font-weight: 400;
+}
+
+.overlay-footer-contact-second-block {
+  width: 32%;
+}
+
+.overlay-footer-icons-wrapper {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-footer-icons-wrapper .first-icon {
+  font-size: 1.7rem;
+}
+
+.overlay-footer-icons-wrapper .second-icon {
+  margin-left: 2.5rem;
+  font-size: 1.7rem;
+}
+/* Styling for the two lines to form an X */
+.overlay-x {
+  position: absolute;
+  top: 2.2rem;
+  right: 5.8rem; /* Align X to the right of the screen */
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.overlay-x-line {
+  position: absolute;
+  width: 100%;
+  height: 0.063rem;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.overlay-x-line1 {
+  transform: rotate(45deg);
+  top: 50%;
+  left: 50%;
+  transform-origin: center;
+}
+
+.overlay-x-line2 {
+  transform: rotate(-45deg);
+  top: 50%;
+  left: 50%;
+  transform-origin: center;
+}
+
+/* Overlay menu links styling */
+.overlay-links a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-weight: 200;
+  font-size: 1.7rem;
+}
+
+.overlay-links a:hover {
+  transform: scale(2.5);
+  font-stretch: expanded;
+  font-weight: 500;
+}
+
+/* Animation for Burger Menu to disappear */
+.burger-menu.open .line1,
+.burger-menu.open .line2,
+.burger-menu.open .line3 {
+  opacity: 0; /* Fade out the burger lines */
+}
+
+/* Responsive Design: Navbar adjustments on smaller screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav .logo p {
+    color: #f0f0f0;
+    font-size: 0.7rem;
+  }
+
+  nav .logo a h1 {
+    font-weight: 500;
+    font-size: 1.9rem;
+    margin-left: -1.8rem;
+  }
+
+  .burger-menu {
+    width: 1.563rem;
+    height: 0.938rem;
+  }
+}
+
+.hero {
+  position: relative;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: black; */
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
+
+  /* opacity: 0.75; Small opacity for overlay */
+  z-index: 0;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+
+.content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.content p {
+  font-size: 1.25rem;
+}
+
+@media (max-width: 768px) {
+  .content h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+
+  .overlay-x {
+    margin-top: 0.5rem;
+    right: 5.8rem;
+    width: 1.875rem;
+    height: 1.875rem;
+    cursor: pointer;
+  }
+  .overlay-logo-line {
+    display: none;
+  }
+}
+
+@media (max-width: 488px) {
+  .content h1 {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .content p {
+    font-size: 0.9rem;
+  }
+
+  nav .logo p {
+    font-size: 0.5rem;
+  }
+
+  nav .logo a h1 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-left: -1.8rem;
+  }
+
+  .burger-menu {
+    width: 1.563rem;
+    height: 0.938rem;
+  }
+  nav {
+    padding: 2rem 3rem;
+  }
+
+  .overlay-x {
+    margin-top: 0.5rem;
+    margin-right: -2rem;
+    width: 1.875rem;
+    height: 1.875rem;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 1240px) {
+  .overlay-hero-wrapper {
+    margin-top: 6rem;
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+  }
+  .overlay-hero-logo {
+    color: white;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .overlay-logo-line {
+    /* position: absolute; */
+    border-right: 0.05rem solid #f0f0f0;
+    margin-left: -2rem;
+    width: 35%;
+    height: 40vh;
+    z-index: 12;
+  }
+
+  .overlay-hero-logo > h1 {
+    font-weight: 500;
+    font-size: 3rem;
+  }
+
+  .overlay-links ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    position: relative; /* So that the X is positioned absolutely */
+    height: 40vh;
+    color: white;
+    list-style-type: none;
+    text-transform: uppercase;
+    padding: 2rem;
+    font-weight: 300;
+    white-space: nowrap;
+  }
+
+  /* Initially hide the list items */
+  .overlay-links ul li {
+    opacity: 0;
+    transform: translateY(
+      3.125rem
+    );
+  }
+
+  .overlay-links ul li > a {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .overlay-hero-logo > h1 {
+    font-size: 2.5rem;
+  }
+
+  .overlay-links ul li > a {
+    font-size: 1.6rem;
+  }
+
+  .overlay-footer-contact-wrapper {
+    display: none;
+  }
+
+  .overlay-footer-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1070px) {
+  .overlay-links ul li > a {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 990px) {
+  .overlay-links ul li > a {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 930px) {
+  .overlay-links ul li > a {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 856px) {
+  .overlay-links ul li > a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 856px) {
+  .overlay-links ul li > a {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .overlay-hero-logo {
+    position: absolute;
+    margin-top: -5.5rem;
+    margin-left: -4rem;
+  }
+
+  .overlay-hero-logo > h1 {
+    font-weight: 300;
+    font-size: 1.5rem;
+  }
+
+  .overlay-hero-logo > p {
+    font-size: 0.8rem;
+    font-weight: 300;
+  }
+
+  .overlay-links ul li > a {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .overlay-hero-logo {
+    margin-left: -2.5rem;
+  }
+}
+
+@media (max-width: 488px) {
+  .overlay-links ul li > a {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .overlay-links ul {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .overlay-links ul li > a {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+  .overlay-links ul {
+    padding: 0.3rem;
+  }
+}
+
+@media (max-width: 353px) {
+  .overlay-links ul li > a {
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+  .overlay-links ul {
+    padding: 0.2rem;
+  }
+}
