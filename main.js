@@ -77,7 +77,7 @@ burgerMenu.addEventListener("click", () => {
     });
   } else {
     // Slide down (show the overlay) with ease-in
-    gsap.to(overlay, { top: "0", duration: 0.5, ease: "power2.in" });
+    gsap.to(overlay, { top: "-100%", duration: 0.5, ease: "power2.in" });
 
     // Fade in the "X" when opening overlay
     gsap.to(overlayX, { opacity: 1, duration: 0.3 });
