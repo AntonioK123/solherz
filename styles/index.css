@@ -73,7 +73,7 @@ nav .logo a h1 {
 /* Overlay menu styling */
 .overlay {
   position: fixed;
-  top: -100%; /* Start off-screen, at the top */
+  top: 0; /* Start off-screen, at the top */
   left: 0;
   right: 0;
   background-color: #0b0b0b;
@@ -427,9 +427,7 @@ nav .logo a h1 {
   /* Initially hide the list items */
   .overlay-links ul li {
     opacity: 0;
-    transform: translateY(
-      3.125rem
-    );
+    transform: translateY(3.125rem);
   }
 
   .overlay-links ul li > a {
