@@ -73,7 +73,7 @@ nav .logo a h1 {
 /* Overlay menu styling */
 .overlay {
   position: fixed;
-  top: -200%; /* Start off-screen, at the top */
+  top: -100%; /* Start off-screen, at the top */
   left: 0;
   right: 0;
   background-color: #0b0b0b;

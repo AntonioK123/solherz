@@ -59,7 +59,7 @@ burgerMenu.addEventListener("click", () => {
   // Use GSAP's Tween to animate the overlay with ease-in effect
   if (overlay.style.top === "0px") {
     // Slide up (hide the overlay) with ease-out
-    gsap.to(overlay, { top: "-200%", duration: 0.5, ease: "power2.out" });
+    gsap.to(overlay, { top: "-100%", duration: 0.5, ease: "power2.out" });
 
     // Fade out the "X" when closing overlay
     gsap.to(overlayX, { opacity: 0, duration: 0.3 });
