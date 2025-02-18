@@ -10,14 +10,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Raleway", Sans-serif;
 }
 html {
   font-size: 16px;
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Raleway", Sans-serif;
   overflow-x: hidden;
 }
 
@@ -105,7 +105,7 @@ nav .logo a h1 {
 /* Overlay menu styling */
 .overlay {
   position: fixed;
-  top: -100%;
+  top: -200%;
   left: 0;
   right: 0;
   background-color: #0b0b0b;
@@ -291,7 +291,7 @@ nav .logo a h1 {
   nav .logo a h1 {
     font-weight: 500;
     font-size: 1.9rem;
-    margin-left: -1.8rem;
+    margin-top: 1.5rem;
   }
 
   .menu {
@@ -304,6 +304,7 @@ nav .logo a h1 {
     justify-content: space-between;
     cursor: pointer;
     position: relative;
+    margin-right: 4.5rem;
   }
 
   .burger-menu .line {
