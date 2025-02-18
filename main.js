@@ -6,6 +6,7 @@ const overlayLinks = document.querySelectorAll(".overlay-links ul li"); // All l
 const kompetenzenLinks = document.querySelectorAll(
   ".kompetenzen-links-wrapper a"
 );
+const menuLinks = document.querySelectorAll(".menu a");
 const overlayHeroLogo = document.getElementById("overlay_hero_logo");
 const overlayHeroSlogan = document.getElementById("overlay_hero_slogan");
 const overlayContactStreet = document.getElementById("street");
@@ -26,6 +27,18 @@ gsap.from(".logo", {
   duration: 0.5,
   delay: 0.3,
 });
+
+gsap.fromTo(
+  menuLinks,
+  { opacity: 0 }, // Start from hidden and offset
+  {
+    opacity: 1,
+    y: 0, // Animate to original position
+    duration: 1.5,
+    stagger: 0.1, // Add stagger effect for sequential appearance
+    ease: "power2.inOut",
+  }
+);
 
 //Burger menu on load
 gsap.from(".burger-menu", {

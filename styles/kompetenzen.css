@@ -67,25 +67,26 @@
 .kompetenzen-intro-text {
   position: relative;
   width: 70%;
-  height: 40vh;
+  height: 30vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 1.25rem;
   color: black;
+  margin-top: 5rem;
 }
 
 .kompetenzen-intro-text > h1 {
   font-weight: 700;
-  font-size: 4.5rem;
+  font-size: 3rem;
   color: black;
   text-transform: uppercase;
   opacity: 0;
 }
 
 .kompetenzen-intro-text > p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: black;
   text-align: center;
   opacity: 0;
@@ -112,8 +113,33 @@
   margin-left: -0.5rem;
 }
 
-.burger-menu-kompetenzen {
+.menu-kompetenzen {
   display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 40%;
+  height: 30%;
+  margin-right: 2rem;
+  font-size: 0.9rem;
+}
+
+.menu-kompetenzen > a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu-kompetenzen > a:hover {
+  text-decoration: underline;
+}
+
+.menu-kompetenzen a h3 {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.burger-menu-kompetenzen {
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   width: 1.875rem;
@@ -2272,6 +2298,25 @@
 
   .kompetenzen-intro-text > p {
     font-size: 1.05rem;
+  }
+
+  .menu-kompetenzen {
+    display: none;
+  }
+  .burger-menu-kompetenzen {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .burger-menu-kompetenzen .line {
+    background-color: black;
+    height: 0.1rem;
+    width: 100%;
+    transition: all 0.3s ease;
   }
 }
 
