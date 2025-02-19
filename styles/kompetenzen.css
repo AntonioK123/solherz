@@ -2310,7 +2310,6 @@
     justify-content: space-between;
     cursor: pointer;
     position: relative;
-    margin-right: 5rem;
   }
 
   .burger-menu-kompetenzen .line {
@@ -2337,7 +2336,6 @@
   }
   .responsive-logo {
     display: block;
-    margin-left: 2rem;
   }
 
   nav .responsive-logo a {
