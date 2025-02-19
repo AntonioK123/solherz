@@ -399,8 +399,16 @@ nav .logo a h1 {
     font-size: 0.9rem;
   }
 
+  nav .logo {
+    width: 50%;
+    height: 110%;
+    margin-left: -1rem;
+    margin-top: -1.5rem;
+  }
+
   nav .logo p {
     font-size: 0.5rem;
+    margin-left: -2rem;
   }
 
   nav .logo a h1 {
@@ -412,13 +420,15 @@ nav .logo a h1 {
   .burger-menu {
     width: 1.563rem;
     height: 0.938rem;
+    margin-top: -1rem;
+    margin-right: -0.1rem;
   }
   nav {
     padding: 2rem 3rem;
   }
 
   .overlay-x {
-    margin-top: 0.5rem;
+    margin-top: -0.5rem;
     margin-right: -2rem;
     width: 1.875rem;
     height: 1.875rem;
