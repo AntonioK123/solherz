@@ -212,7 +212,7 @@ overlayX.addEventListener("click", () => {
     ease: "power2.out",
     onComplete: () => {
       // After links animation is completed, hide the overlay container
-      gsap.to(overlay, { top: "-100%", duration: 0.2, ease: "power2.out" });
+      gsap.to(overlay, { top: "-200%", duration: 0.2, ease: "power2.out" });
       // Fade out the "X" when the overlay closes
       gsap.to(overlayX, { opacity: 0, duration: 0.3 });
     },
@@ -227,7 +227,7 @@ overlayX.addEventListener("click", () => {
     ease: "power2.out",
     onComplete: () => {
       // After links animation is completed, hide the overlay container
-      gsap.to(overlay, { top: "-100%", duration: 0.2, ease: "power2.out" });
+      gsap.to(overlay, { top: "-200%", duration: 0.2, ease: "power2.out" });
       // Fade out the "X" when the overlay closes
       gsap.to(overlayX, { opacity: 0, duration: 0.3 });
     },
