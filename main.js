@@ -84,7 +84,7 @@ burgerMenu.addEventListener("click", () => {
       duration: 0.5,
       stagger: 0.1,
       ease: "power2.out",
-      onComplete: () => {
+      onComplete: function () {
         gsap.to(overlay, { top: " -200%", duration: 0.5, ease: "power2.out" });
       },
     });
@@ -213,11 +213,11 @@ overlayX.addEventListener("click", () => {
     duration: 0.4,
     stagger: 0.1,
     ease: "power2.out",
-    onComplete: () => {
-      // After links animation is completed, hide the overlay container
-      gsap.to(overlay, { top: "-100%", duration: 0.2, ease: "power2.out" });
+    onComplete: function () {
       // Fade out the "X" when the overlay closes
       gsap.to(overlayX, { opacity: 0, duration: 0.3 });
+      // After links animation is completed, hide the overlay container
+      gsap.to(overlay, { top: "-100%", duration: 0.2, ease: "power2.out" });
     },
   });
 
@@ -228,7 +228,7 @@ overlayX.addEventListener("click", () => {
     stagger: 0.2,
     delay: 0.6,
     ease: "power2.out",
-    onComplete: () => {
+    onComplete: function () {
       // After links animation is completed, hide the overlay container
       gsap.to(overlay, { top: "-100%", duration: 0.2, ease: "power2.out" });
       // Fade out the "X" when the overlay closes
@@ -241,7 +241,7 @@ overlayX.addEventListener("click", () => {
     duration: 0.4,
     stagger: 0.3,
     delay: 0.2,
-    onComplete: () => {
+    onComplete: function () {
       // After links animation is completed, hide the overlay container
       gsap.to(overlay, { top: "-100%", duration: 0.2, ease: "power2.out" });
       // Fade out the "X" when the overlay closes
